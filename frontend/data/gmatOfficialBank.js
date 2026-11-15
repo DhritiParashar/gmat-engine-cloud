@@ -160,7 +160,30 @@ window.IPM_VARC_BANK = window.GMAT_OFFICIAL_BANK.verbal.criticalReasoning.map(q 
   question: `${q.stimulus}\n\n${q.prompt}`, options: q.options, answer: q.correct, explanation: q.explanation
 }));
 window.IPM_DILR_VARC_BANK = window.IPM_VARC_BANK;
-window.IPM_QUANT_CORE = window.GMAT_OFFICIAL_BANK.quant.map(q => ({
-  id: q.id, topic: q.subtype, difficulty: q.difficulty,
-  question: q.stem, options: q.options, answer: q.correct, explanation: q.explanation
-}));
+window.IPM_QUANT_CORE = [
+  {
+    id: "GMAT-MOD-ALG",
+    title: "GMAT Focus Problem Solving: Rates, Work & Word Problems",
+    weightage: "Core Quant • 21 Qs / 45 Mins (Zero Geometry on GMAT Focus)",
+    refresher: "GMAT Focus Quantitative Reasoning tests pure algebraic modeling, rates/ratios, weighted averages, and multi-step word translations under question-adaptive escalation.",
+    shortcuts: [
+      "Combine rate equations linearly (e.g., x + y = 1/6 and 2x + 0.5y = 1/4) to eliminate variables in 15 seconds.",
+      "Back-solve from Choice (C) when answer choices are clean integers."
+    ],
+    drills: [window.GMAT_OFFICIAL_BANK.quant[0]].map(q => ({
+      id: q.id, question: q.stem, options: q.options, answer: q.correct, explanation: q.explanation
+    }))
+  },
+  {
+    id: "GMAT-MOD-COMB",
+    title: "GMAT Focus Problem Solving: Combinatorics, Probability & Number Properties",
+    weightage: "705–805 Differentiator • High Adaptive Difficulty",
+    refresher: "Partition constrained counting problems into mutually exclusive cases (e.g., (2 Senior, 2 Junior) + (3 Senior, 1 Junior)) before multiplying combinations.",
+    shortcuts: [
+      "Check complementary counting (Total - Invalid) whenever 'at least one' appears."
+    ],
+    drills: [window.GMAT_OFFICIAL_BANK.quant[1]].map(q => ({
+      id: q.id, question: q.stem, options: q.options, answer: q.correct, explanation: q.explanation
+    }))
+  }
+];
