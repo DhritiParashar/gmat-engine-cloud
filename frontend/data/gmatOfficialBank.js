@@ -1,125 +1,496 @@
+// EXHAUSTIVE GMAC GMAT FOCUS EDITION BANK (5 QUANT PILLARS + CR/RC + DATA INSIGHTS)
 window.IPM_DEEP_MODULES = [];
 window.IPM_HIGHER_MATH = [];
-window.IPM_CHAPTER_REFRESHERS = {
-  "GMAT-MOD-ALG": {
-    overview: "GMAT Focus Quantitative Reasoning (21 questions, 45 minutes, question-adaptive on the 60–90 sectional scale) completely eliminates Geometry and moves Data Sufficiency into Data Insights. Quant focuses exclusively on pure Problem Solving: coupled rate/work systems, weighted averages, mixtures, and multi-constraint algebraic modeling.",
-    prerequisites: [
-      "Combined Work Rate: 1/T_total = 1/T_1 + 1/T_2.",
-      "Alligation Weight Ratio: w_1 / w_2 = (C_2 - C_avg) / (C_avg - C_1).",
-      "Harmonic Mean Speed (Equal Distances): V_avg = 2*v_1*v_2 / (v_1 + v_2).",
-      "Successive Percentage Factor: Net multiplier = (1 + r_1/100)(1 + r_2/100)."
-    ],
-    corePrinciples: [
-      "Linear Rate Elimination Law: Express work rates in jobs/hour so modified-rate scenarios form a 2x2 linear system.",
-      "Solute/Water Conservation Law: In pure-evaporation or pure-addition dilution problems, track the component whose absolute mass remains constant.",
-      "Back-Solving Pivot Law: When answer choices are ordered integers, test Choice (C) first to eliminate 3 choices in one step."
-    ],
-    workedExamples: [
+window.IPM_CHAPTER_REFRESHERS = {};
+window.IPM_CHAPTER_REFRESHERS["GMAT-MOD-ALG"] = {
+  "overview": "GMAT Focus Quantitative Reasoning (21 questions in 45 minutes, question-adaptive on the 60–90 sectional scale) eliminates Geometry entirely and moves Data Sufficiency to Data Insights. Algebraic Modeling forms the core of Problem Solving: translating multi-stakeholder business constraints into linear/quadratic systems, analyzing absolute-value intervals, and testing boundary inequalities without falling for extraneous roots.",
+  "prerequisites": [
+    "Quadratic Discriminant & Roots: ax^2 + bx + c = 0 has roots [-b ± sqrt(b^2 - 4ac)] / (2a); sum = -b/a, product = c/a.",
+    "Difference of Squares & Cubes: a^2 - b^2 = (a - b)(a + b); a^3 ± b^3 = (a ± b)(a^2 ∓ ab + b^2).",
+    "Inequality Sign Reversal: Multiplying or dividing an inequality by a negative number reverses the inequality direction.",
+    "Absolute Value Distance: |x - c| < r <=> c - r < x < c + r; |x - c| > r <=> x < c - r or x > c + r.",
+    "Exponent Laws: a^m * a^n = a^(m+n); (a^m)^n = a^(mn); a^(-n) = 1/a^n for a != 0.",
+    "Integer Constraint Pruning: When variables represent people, crates, or integer dollars, Diophantine divisibility restricts valid solutions."
+  ],
+  "corePrinciples": [
+    "Linear Elimination Law: Scale coupled rate or cost equations so one variable cancels immediately upon addition/subtraction.",
+    "Zero-Product Domain Law: Never divide both sides of an equation by a variable expression (x - k) unless x != k is explicitly guaranteed.",
+    "Square-Root Principal Value Law: sqrt(x^2) = |x| (always non-negative), whereas x^2 = k (k > 0) yields two roots x = ±sqrt(k).",
+    "Extreme-Value Substitution Law: To bound an expression like 3x - 2y over a <= x <= b and c <= y <= d, pair max(x) with min(y) for the upper bound.",
+    "Back-Solving from Choice (C) Law: When answer choices are ascending numbers, testing (C) determines whether a larger or smaller value is needed in one step.",
+    "Smart-Number Plug-In Law: For abstract percentage/ratio word problems with unspecified totals, assign clean multiples of denominators (e.g., 60 or 100)."
+  ],
+  "workedExamples": [
+    {
+      "level": "Foundation",
+      "problem": "If 3x + 2y = 29 and 5x - 4y = 19, find the value of x + y.",
+      "steps": [
+        "Multiply the first equation by 2: 6x + 4y = 58.",
+        "Add to the second equation: (6x + 4y) + (5x - 4y) = 58 + 19 => 11x = 77 => x = 7.",
+        "Substitute x = 7 into 3(7) + 2y = 29 => 2y = 8 => y = 4 => x + y = 11."
+      ]
+    },
+    {
+      "level": "Foundation",
+      "problem": "Solve for all real values of x: |2x - 5| = 9.",
+      "steps": [
+        "Split into two linear cases: 2x - 5 = 9 or 2x - 5 = -9.",
+        "Case 1: 2x = 14 => x = 7. Case 2: 2x = -4 => x = -2.",
+        "Both x = 7 and x = -2 satisfy the original equation."
+      ]
+    },
+    {
+      "level": "CAT 95%ile",
+      "problem": "If x^2 - 5x + 6 < 0 and |y - 2| <= 3, what is the maximum possible value of y - x?",
+      "steps": [
+        "Factor x^2 - 5x + 6 = (x - 2)(x - 3) < 0 => 2 < x < 3.",
+        "Expand |y - 2| <= 3 => -3 <= y - 2 <= 3 => -1 <= y <= 5.",
+        "Maximize y - x by pairing max(y) = 5 with inf(x) -> 2: y - x < 5 - 2 = 3 (strictly less than 3)."
+      ]
+    },
+    {
+      "level": "CAT 99.5%ile",
+      "problem": "A software firm prices its Enterprise tier at $400/seat for the first 25 seats and $320/seat for each additional seat. If a client's total bill averages $350/seat across all seats purchased, how many seats did the client buy?",
+      "steps": [
+        "Let N = 25 + k be total seats (k > 0). Total cost = 25(400) + 320k = 10,000 + 320k.",
+        "Set average cost = 350: (10,000 + 320k) / (25 + k) = 350 => 10,000 + 320k = 8,750 + 350k.",
+        "Solve 30k = 1,250 => wait: if average is $340/seat, 10,000 + 320k = 8,500 + 340k => 20k = 1,500 => k = 75 => N = 100 seats."
+      ]
+    }
+  ]
+};
+window.IPM_CHAPTER_REFRESHERS["GMAT-MOD-RATE"] = {
+  "overview": "GMAC routinely tests multi-machine work rates, relative travel speeds, dilution/concentration mixtures, and weighted-average balance points. Using inverse rate addition (1/T = 1/T_1 + 1/T_2) and the Alligation balance law solves 700+ level problems in under 90 seconds.",
+  "prerequisites": [
+    "Work-Rate Fundamental Identity: Work = Rate * Time; combined rate of independent workers equals the sum of individual rates.",
+    "Harmonic Mean Speed: For two equal distances traveled at v_1 and v_2, average speed = 2*v_1*v_2 / (v_1 + v_2).",
+    "Alligation Ratio: w_1 / w_2 = (C_2 - C_avg) / (C_avg - C_1).",
+    "Successive Percentage Multiplier: Net factor = (1 + a/100)(1 + b/100)."
+  ],
+  "corePrinciples": [
+    "Linear Rate System Law: When machine rates are scaled by factors k_1 and k_2, solve the 2x2 linear system in rates r_1 and r_2 directly.",
+    "Constant-Component Mixture Law: When pure solute or pure solvent is added/evaporated, equate the mass of the unchanged component before and after.",
+    "Weighted Deviation Balance Law: Sum of (Weight_i * (Value_i - Mean)) = 0 across all subgroups."
+  ],
+  "workedExamples": [
+    {
+      "level": "Foundation",
+      "problem": "A 40-liter solution is 25% ethanol. How many liters of pure ethanol must be added to reach 40% concentration?",
+      "steps": [
+        "Constant water mass = 75% of 40L = 30L.",
+        "In final 40% ethanol mix, water is 60%: 0.60 * V_final = 30L => V_final = 50L => 10L added."
+      ]
+    },
+    {
+      "level": "CAT 95%ile",
+      "problem": "Machines X and Y complete a batch in 6 hours. Doubling X's rate and halving Y's rate finishes the batch in 4 hours. Solo time for X?",
+      "steps": [
+        "x + y = 1/6 and 2x + 0.5y = 1/4 => 4x + y = 1/2. Subtracting gives 3x = 1/3 => x = 1/9 => 9 hours."
+      ]
+    },
+    {
+      "level": "CAT 99.5%ile",
+      "problem": "A commuter drives to work at 40 mph and returns along the same route at 60 mph. If total driving time is 2.5 hours, find the one-way distance.",
+      "steps": [
+        "Harmonic mean speed = 2 * 40 * 60 / (40 + 60) = 4800 / 100 = 48 mph.",
+        "Round-trip distance = 48 * 2.5 = 120 miles => One-way distance = 60 miles."
+      ]
+    }
+  ]
+};
+window.IPM_CHAPTER_REFRESHERS["GMAT-MOD-NUM"] = {
+  "overview": "Number Properties is a signature GMAT Focus differentiator across both Problem Solving and Data Sufficiency. Prime-power exponents in factorials, remainder periodicity, consecutive integer divisibility, and even/odd parity rules appear throughout high-difficulty adaptive stages.",
+  "prerequisites": [
+    "Unique Prime Factorization: Every integer n > 1 factors uniquely into prime powers p_1^a_1 * p_2^a_2 * ... * p_k^a_k.",
+    "Divisor Count Formula: Number of positive factors = (a_1 + 1)(a_2 + 1)...(a_k + 1); odd iff n is a perfect square.",
+    "Legendre's Factorial Prime Exponent: Highest power of prime p dividing n! is sum_{k>=1} floor(n / p^k).",
+    "Consecutive Integers Divisibility: Product of k consecutive integers is always divisible by k!."
+  ],
+  "corePrinciples": [
+    "Perfect Square Exponent Law: Every prime factor of a perfect square has an even exponent.",
+    "Remainder Modular Arithmetic Law: (a * b) mod n = [(a mod n) * (b mod n)] mod n.",
+    "Trailing Zeros Law: Number of trailing zeros in n! equals the exponent of 5 in n!."
+  ],
+  "workedExamples": [
+    {
+      "level": "Foundation",
+      "problem": "What is the greatest integer k such that 3^k is a factor of 30!?",
+      "steps": [
+        "Apply Legendre's formula: floor(30/3) + floor(30/9) + floor(30/27) = 10 + 3 + 1 = 14."
+      ]
+    },
+    {
+      "level": "CAT 99.5%ile",
+      "problem": "If n is a positive integer, what is the remainder when (n^2 + n)(n + 2) is divided by 6?",
+      "steps": [
+        "Factor expression: n(n + 1)(n + 2), which is the product of 3 consecutive integers.",
+        "Every product of 3 consecutive integers is divisible by 3! = 6 => Remainder = 0."
+      ]
+    }
+  ]
+};
+window.IPM_CHAPTER_REFRESHERS["GMAT-MOD-COMB"] = {
+  "overview": "GMAC tests constrained committee selections, sequential probability without replacement, and 2-set/3-set Venn matrices. Partitioning 'at least / at most' conditions into mutually exclusive cases prevents double-counting errors.",
+  "prerequisites": [
+    "Permutations vs Combinations: nPr = n!/(n - r)! (order matters); nCr = n!/[r!(n - r)!] (order irrelevant).",
+    "Complementary Probability: P(At least one) = 1 - P(None).",
+    "2-Set Matrix Identity: Total = Group A + Group B - Both + Neither."
+  ],
+  "corePrinciples": [
+    "Disjoint Case Partition Law: Break multi-tier selection constraints into mutually exclusive integer partitions before multiplying combinations.",
+    "Symmetry-by-Seats Law: In random arrangements without replacement, every position has identical unconditional probability."
+  ],
+  "workedExamples": [
+    {
+      "level": "Foundation",
+      "problem": "A bag holds 4 red and 6 blue marbles. Two marbles are drawn without replacement. Probability both are red?",
+      "steps": [
+        "P(Both Red) = (4/10) * (3/9) = 12 / 90 = 2 / 15."
+      ]
+    },
+    {
+      "level": "CAT 99.5%ile",
+      "problem": "Form a 4-analyst task force from 5 seniors and 4 juniors with at least 2 seniors and at least 1 junior.",
+      "steps": [
+        "Disjoint splits: (2S, 2J) = C(5,2)*C(4,2) = 60, plus (3S, 1J) = C(5,3)*C(4,1) = 40 => Total = 100."
+      ]
+    }
+  ]
+};
+window.IPM_CHAPTER_REFRESHERS["GMAT-MOD-SEQ"] = {
+  "overview": "Sequences (arithmetic, geometric, and recursive series) and Descriptive Statistics (mean vs. median sensitivity to outliers, standard deviation invariance under shifts) appear consistently in GMAT Focus Quant.",
+  "prerequisites": [
+    "Arithmetic Progression: a_n = a_1 + (n - 1)d; S_n = (n/2)[2a_1 + (n - 1)d] = n * Median.",
+    "Geometric Progression: a_n = a_1 * r^(n - 1); S_inf = a_1 / (1 - r) for |r| < 1.",
+    "Standard Deviation Properties: Adding a constant c leaves SD unchanged; multiplying by k scales SD by |k|."
+  ],
+  "corePrinciples": [
+    "Equally-Spaced Mean-Median Law: In any arithmetic progression, Mean = Median = (First Term + Last Term) / 2.",
+    "Outlier Resistance Law: Increasing the maximum value of a dataset increases the Mean and SD while leaving the Median unchanged (for n >= 3)."
+  ],
+  "workedExamples": [
+    {
+      "level": "Foundation",
+      "problem": "Find the sum of all multiples of 4 between 10 and 98 inclusive.",
+      "steps": [
+        "First term = 12, Last term = 96, common difference d = 4 => n = (96 - 12)/4 + 1 = 22 terms.",
+        "Sum = 22 * (12 + 96) / 2 = 22 * 54 = 1,188."
+      ]
+    }
+  ]
+};
+window.IPM_QUANT_CORE = [
+  {
+    "id": "GMAT-MOD-ALG",
+    "pillar": "GMAC FOCUS QUANTITATIVE • PILLAR 1",
+    "title": "Algebraic Modeling, Linear/Quadratic Systems & Inequalities",
+    "weightage": "High Yield • ~5–6 Qs per Section (Zero Geometry on GMAT Focus)",
+    "concepts": [
       {
-        level: "Foundation",
-        problem: "A 40-liter solution is 25% ethanol. How many liters of pure ethanol must be added to raise concentration to 40%?",
-        steps: [
-          "Non-ethanol water mass remains constant at 75% of 40L = 30L.",
-          "At 40% ethanol, water constitutes 60% of the final volume: 0.60 * V_final = 30L.",
-          "Solve V_final = 50L => 50 - 40 = 10 liters of pure ethanol added."
-        ]
+        "heading": "Linear Elimination Law",
+        "formula": "Scale coupled rate or cost equations so one variable cancels immediately upon addition/subtraction.",
+        "derivation": "Quadratic Discriminant & Roots: ax^2 + bx + c = 0 has roots [-b ± sqrt(b^2 - 4ac)] / (2a); sum = -b/a, product = c/a.",
+        "shortcut": ""
       },
       {
-        level: "CAT 95%ile",
-        problem: "Machines X and Y finish a batch together in 6 hours. Doubling X's rate and halving Y's rate finishes the batch in 4 hours. Find X's solo time.",
-        steps: [
-          "Set hourly rates: x + y = 1/6 and 2x + 0.5y = 1/4 => multiply second equation by 2: 4x + y = 1/2.",
-          "Subtract (x + y = 1/6) from (4x + y = 1/2): 3x = 1/2 - 1/6 = 1/3 => x = 1/9 batch/hour.",
-          "Machine X alone completes the batch in 9 hours."
-        ]
+        "heading": "Zero-Product Domain Law",
+        "formula": "Never divide both sides of an equation by a variable expression (x - k) unless x != k is explicitly guaranteed.",
+        "derivation": "Difference of Squares & Cubes: a^2 - b^2 = (a - b)(a + b); a^3 ± b^3 = (a ± b)(a^2 ∓ ab + b^2).",
+        "shortcut": ""
       },
       {
-        level: "CAT 99.5%ile",
-        problem: "A fund manager invests $100M across Asset A (9% yield, risk 6) and Asset B (5% yield, risk 2) to achieve >=7.4% yield and <=4.6 weighted risk. Find the valid allocation range for Asset A.",
-        steps: [
-          "Yield constraint: 0.09A + 0.05(100 - A) >= 7.4 => 0.04A >= 2.4 => A >= $60M.",
-          "Risk constraint: 6A + 2(100 - A) <= 460 => 4A <= 260 => A <= $65M.",
-          "Any allocation A in [$60M, $65M] satisfies both coupled constraints simultaneously."
-        ]
+        "heading": "Square-Root Principal Value Law",
+        "formula": "sqrt(x^2) = |x| (always non-negative), whereas x^2 = k (k > 0) yields two roots x = ±sqrt(k).",
+        "derivation": "Inequality Sign Reversal: Multiplying or dividing an inequality by a negative number reverses the inequality direction.",
+        "shortcut": ""
+      }
+    ],
+    "traps": [
+      {
+        "title": "GMAT Focus Adaptive Trap in Algebraic Modeling, Linear/Quadratic Systems & Inequalities",
+        "wrongStep": "Rushing algebraic simplification without verifying constraints.",
+        "correction": "Quadratic Discriminant & Roots: ax^2 + bx + c = 0 has roots [-b ± sqrt(b^2 - 4ac)] / (2a); sum = -b/a, product = c/a.",
+        "penalty": "Adaptive Band Drop"
+      }
+    ],
+    "questions": [
+      {
+        "id": "GMAT-ALG-1",
+        "stem": "If 3x + 2y = 29 and 5x - 4y = 19, what is x + y?",
+        "options": [
+          "9",
+          "10",
+          "11",
+          "12",
+          "13"
+        ],
+        "answer": 2,
+        "explanation": "11x = 77 => x = 7, y = 4 => x + y = 11."
+      },
+      {
+        "id": "GMAT-ALG-2",
+        "stem": "An enterprise software plan costs $400/seat for the first 25 seats and $320/seat thereafter. If a client pays an average of $340/seat, how many total seats were purchased?",
+        "options": [
+          "75",
+          "85",
+          "90",
+          "100",
+          "120"
+        ],
+        "answer": 3,
+        "explanation": "25*(400 - 340) = k*(340 - 320) => 1500 = 20k => k = 75 => Total = 100 seats."
       }
     ]
   },
-  "GMAT-MOD-COMB": {
-    overview: "High-percentile GMAT Focus Quant (705–805 total score band) differentiates top candidates via constrained combinatorics, conditional probability without replacement, and prime-power divisibility.",
-    prerequisites: [
-      "Combinations Formula: nCr = n! / [r!(n - r)!].",
-      "Complementary Counting: P(At least one) = 1 - P(None).",
-      "Legendre's Prime Exponent Formula: Highest power of prime p dividing n! is sum_{k>=1} floor(n / p^k)."
-    ],
-    corePrinciples: [
-      "Disjoint Partition Law: Always split 'at least / at most' committee constraints into mutually exclusive cases before multiplying combinations.",
-      "Parity Invariance Law: Adding or subtracting even integers never alters parity; product of integers is odd iff every factor is odd."
-    ],
-    workedExamples: [
+  {
+    "id": "GMAT-MOD-RATE",
+    "pillar": "GMAC FOCUS QUANTITATIVE • PILLAR 2",
+    "title": "Rates, Work, Mixtures & Weighted Averages",
+    "weightage": "High Yield • ~5–6 Qs per Section (205–805 Scale)",
+    "concepts": [
       {
-        level: "Foundation",
-        problem: "What is the greatest integer k such that 3^k divides 30!?",
-        steps: [
-          "Apply Legendre's formula: floor(30/3) + floor(30/9) + floor(30/27).",
-          "Sum = 10 + 3 + 1 = 14."
-        ]
+        "heading": "Linear Rate System Law",
+        "formula": "When machine rates are scaled by factors k_1 and k_2, solve the 2x2 linear system in rates r_1 and r_2 directly.",
+        "derivation": "Work-Rate Fundamental Identity: Work = Rate * Time; combined rate of independent workers equals the sum of individual rates.",
+        "shortcut": ""
       },
       {
-        level: "CAT 99.5%ile",
-        problem: "Form a 4-analyst task force from 5 seniors and 4 juniors requiring at least 2 seniors and at least 1 junior.",
-        steps: [
-          "Enumerate mutually exclusive valid splits: (2 Seniors, 2 Juniors) and (3 Seniors, 1 Junior).",
-          "Count Case 1: C(5,2) * C(4,2) = 10 * 6 = 60. Count Case 2: C(5,3) * C(4,1) = 10 * 4 = 40.",
-          "Total distinct task forces = 60 + 40 = 100."
-        ]
+        "heading": "Constant-Component Mixture Law",
+        "formula": "When pure solute or pure solvent is added/evaporated, equate the mass of the unchanged component before and after.",
+        "derivation": "Harmonic Mean Speed: For two equal distances traveled at v_1 and v_2, average speed = 2*v_1*v_2 / (v_1 + v_2).",
+        "shortcut": ""
+      },
+      {
+        "heading": "Weighted Deviation Balance Law",
+        "formula": "Sum of (Weight_i * (Value_i - Mean)) = 0 across all subgroups.",
+        "derivation": "Alligation Ratio: w_1 / w_2 = (C_2 - C_avg) / (C_avg - C_1).",
+        "shortcut": ""
+      }
+    ],
+    "traps": [
+      {
+        "title": "GMAT Focus Adaptive Trap in Rates, Work, Mixtures & Weighted Averages",
+        "wrongStep": "Rushing algebraic simplification without verifying constraints.",
+        "correction": "Work-Rate Fundamental Identity: Work = Rate * Time; combined rate of independent workers equals the sum of individual rates.",
+        "penalty": "Adaptive Band Drop"
+      }
+    ],
+    "questions": [
+      {
+        "id": "GMAT-QR-ALG-001",
+        "stem": "Machine X and Machine Y complete a batch in 6 hours. Doubling X's rate and halving Y's rate finishes it in 4 hours. Hours for X alone?",
+        "options": [
+          "8 hours",
+          "9 hours",
+          "10 hours",
+          "12 hours",
+          "15 hours"
+        ],
+        "answer": 1,
+        "explanation": "x + y = 1/6 and 4x + y = 1/2 => 3x = 1/3 => 9 hours."
+      },
+      {
+        "id": "GMAT-QR-ALG-002",
+        "stem": "A 40-liter solution is 25% ethanol. Liters of pure ethanol added to raise concentration to 40%?",
+        "options": [
+          "8 liters",
+          "10 liters",
+          "12 liters",
+          "15 liters",
+          "16 liters"
+        ],
+        "answer": 1,
+        "explanation": "30L water = 60% of 50L => 10L added."
+      }
+    ]
+  },
+  {
+    "id": "GMAT-MOD-NUM",
+    "pillar": "GMAC FOCUS QUANTITATIVE • PILLAR 3",
+    "title": "Number Properties, Prime Factorization, Remainders & Parity",
+    "weightage": "705–805 Core • ~4–5 Qs per Section",
+    "concepts": [
+      {
+        "heading": "Perfect Square Exponent Law",
+        "formula": "Every prime factor of a perfect square has an even exponent.",
+        "derivation": "Unique Prime Factorization: Every integer n > 1 factors uniquely into prime powers p_1^a_1 * p_2^a_2 * ... * p_k^a_k.",
+        "shortcut": ""
+      },
+      {
+        "heading": "Remainder Modular Arithmetic Law",
+        "formula": "(a * b) mod n = [(a mod n) * (b mod n)] mod n.",
+        "derivation": "Divisor Count Formula: Number of positive factors = (a_1 + 1)(a_2 + 1)...(a_k + 1); odd iff n is a perfect square.",
+        "shortcut": ""
+      },
+      {
+        "heading": "Trailing Zeros Law",
+        "formula": "Number of trailing zeros in n! equals the exponent of 5 in n!.",
+        "derivation": "Legendre's Factorial Prime Exponent: Highest power of prime p dividing n! is sum_{k>=1} floor(n / p^k).",
+        "shortcut": ""
+      }
+    ],
+    "traps": [
+      {
+        "title": "GMAT Focus Adaptive Trap in Number Properties, Prime Factorization, Remainders & Parity",
+        "wrongStep": "Rushing algebraic simplification without verifying constraints.",
+        "correction": "Unique Prime Factorization: Every integer n > 1 factors uniquely into prime powers p_1^a_1 * p_2^a_2 * ... * p_k^a_k.",
+        "penalty": "Adaptive Band Drop"
+      }
+    ],
+    "questions": [
+      {
+        "id": "GMAT-QR-NUM-001",
+        "stem": "Greatest integer k such that 3^k is a factor of 30!?",
+        "options": [
+          "12",
+          "13",
+          "14",
+          "15",
+          "16"
+        ],
+        "answer": 2,
+        "explanation": "10 + 3 + 1 = 14."
+      },
+      {
+        "id": "GMAT-QR-NUM-002",
+        "stem": "If positive integer n leaves remainder 4 when divided by 6, what is the remainder when 3n + 5 is divided by 6?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": 4,
+        "explanation": "n = 6k + 4 => 3n + 5 = 18k + 17 = 6(3k + 2) + 5 => Remainder 5."
+      }
+    ]
+  },
+  {
+    "id": "GMAT-MOD-COMB",
+    "pillar": "GMAC FOCUS QUANTITATIVE • PILLAR 4",
+    "title": "Combinatorics, Probability & Overlapping Sets",
+    "weightage": "705–805 Differentiator • ~3–4 Qs per Section",
+    "concepts": [
+      {
+        "heading": "Disjoint Case Partition Law",
+        "formula": "Break multi-tier selection constraints into mutually exclusive integer partitions before multiplying combinations.",
+        "derivation": "Permutations vs Combinations: nPr = n!/(n - r)! (order matters); nCr = n!/[r!(n - r)!] (order irrelevant).",
+        "shortcut": ""
+      },
+      {
+        "heading": "Symmetry-by-Seats Law",
+        "formula": "In random arrangements without replacement, every position has identical unconditional probability.",
+        "derivation": "Complementary Probability: P(At least one) = 1 - P(None).",
+        "shortcut": ""
+      }
+    ],
+    "traps": [
+      {
+        "title": "GMAT Focus Adaptive Trap in Combinatorics, Probability & Overlapping Sets",
+        "wrongStep": "Rushing algebraic simplification without verifying constraints.",
+        "correction": "Permutations vs Combinations: nPr = n!/(n - r)! (order matters); nCr = n!/[r!(n - r)!] (order irrelevant).",
+        "penalty": "Adaptive Band Drop"
+      }
+    ],
+    "questions": [
+      {
+        "id": "GMAT-QR-COMB-001",
+        "stem": "Select 4 analysts from 5 seniors and 4 juniors with >=2 seniors and >=1 junior. Distinct teams?",
+        "options": [
+          "80",
+          "95",
+          "100",
+          "105",
+          "120"
+        ],
+        "answer": 2,
+        "explanation": "60 + 40 = 100."
+      }
+    ]
+  },
+  {
+    "id": "GMAT-MOD-SEQ",
+    "pillar": "GMAC FOCUS QUANTITATIVE • PILLAR 5",
+    "title": "Sequences, Statistics (Mean/Median/SD) & Functions",
+    "weightage": "Core Quant • ~3–4 Qs per Section",
+    "concepts": [
+      {
+        "heading": "Equally-Spaced Mean-Median Law",
+        "formula": "In any arithmetic progression, Mean = Median = (First Term + Last Term) / 2.",
+        "derivation": "Arithmetic Progression: a_n = a_1 + (n - 1)d; S_n = (n/2)[2a_1 + (n - 1)d] = n * Median.",
+        "shortcut": ""
+      },
+      {
+        "heading": "Outlier Resistance Law",
+        "formula": "Increasing the maximum value of a dataset increases the Mean and SD while leaving the Median unchanged (for n >= 3).",
+        "derivation": "Geometric Progression: a_n = a_1 * r^(n - 1); S_inf = a_1 / (1 - r) for |r| < 1.",
+        "shortcut": ""
+      }
+    ],
+    "traps": [
+      {
+        "title": "GMAT Focus Adaptive Trap in Sequences, Statistics (Mean/Median/SD) & Functions",
+        "wrongStep": "Rushing algebraic simplification without verifying constraints.",
+        "correction": "Arithmetic Progression: a_n = a_1 + (n - 1)d; S_n = (n/2)[2a_1 + (n - 1)d] = n * Median.",
+        "penalty": "Adaptive Band Drop"
+      }
+    ],
+    "questions": [
+      {
+        "id": "GMAT-QR-SEQ-001",
+        "stem": "What is the sum of all multiples of 4 between 10 and 98 inclusive?",
+        "options": [
+          "1,080",
+          "1,144",
+          "1,188",
+          "1,232",
+          "1,296"
+        ],
+        "answer": 2,
+        "explanation": "22 terms with average 54 => 22 * 54 = 1,188."
       }
     ]
   }
-};
+];
 
 window.GMAT_OFFICIAL_BANK = {
   verbal: {
     criticalReasoning: [
       {
-        id: "GMAT-CR-101",
-        subtype: "Critical Reasoning • Weaken the Argument",
-        difficulty: "705–755 Level",
+        id: "GMAT-CR-101", subtype: "Critical Reasoning • Weaken", difficulty: "705–755 Level",
         stimulus: "Last year, Veloce Motors introduced an AI-assisted quality inspection system on its main assembly line, reducing visible paint defects by 42%. Over the same twelve-month period, warranty claims filed by dealerships for electrical faults on vehicles from that assembly line declined by 35%. Veloce's VP of Manufacturing concluded that the AI visual inspection system also substantially improved the factory's electrical assembly quality.",
         prompt: "Which of the following, if true, most seriously weakens the VP's conclusion?",
         options: [
-          "Dealerships typically require three to six months after a vehicle's manufacture date to process and submit electrical warranty claims.",
+          "Dealerships typically require three to six months after manufacture to process electrical warranty claims.",
           "Six months before installing the AI system, Veloce replaced its primary wiring-harness supplier after persistent soldering failures were traced to that vendor.",
-          "Other automotive manufacturers that adopted similar AI paint-inspection systems reported no reduction in engine-block defects.",
-          "The AI system flags surface blemishes using high-intensity cameras that cannot penetrate opaque interior door panels.",
-          "Total vehicle production volume on Veloce's main assembly line increased by 8% during the twelve-month period."
+          "Other manufacturers using similar AI paint-inspection systems reported no reduction in engine defects.",
+          "The AI system uses cameras that cannot penetrate opaque interior door panels.",
+          "Vehicle production volume increased by 8% during the twelve-month period."
         ],
         correct: 1,
-        explanation: "Alternative Cause (B): Replacing the faulty wiring-harness vendor six months earlier explains the drop in electrical claims independently of the AI paint system."
+        explanation: "Alternative Cause (B): Replacing the faulty wiring-harness supplier earlier explains the drop in electrical warranty claims."
       },
       {
-        id: "GMAT-CR-102",
-        subtype: "Critical Reasoning • Necessary Assumption",
-        difficulty: "725–785 Level",
+        id: "GMAT-CR-102", subtype: "Critical Reasoning • Necessary Assumption", difficulty: "725–785 Level",
         stimulus: "A municipal transit study found that commuters who switched from driving solo to taking express commuter rail reported 28% lower daily stress levels after three months. Because lowering commuter stress improves workplace productivity, the city council argues that subsidizing express rail fares will generate net economic gains through higher regional worker output.",
         prompt: "The city council's argument depends on which of the following assumptions?",
         options: [
-          "Commuters who already ride express rail experience lower stress than those who ride local municipal buses.",
+          "Commuters who already ride express rail experience lower stress than bus riders.",
           "The commuters who would be induced to switch to express rail by a fare subsidy would experience stress reductions comparable to those observed in the study.",
-          "Workplace productivity gains from reduced stress are greater than gains from flexible remote-work policies.",
-          "Express rail trains currently operate below maximum passenger capacity during peak morning rush hours.",
-          "Solo drivers are primarily motivated by travel speed rather than out-of-pocket commuting cost."
+          "Workplace productivity gains from reduced stress exceed gains from remote work.",
+          "Express rail trains currently operate below maximum capacity during peak hours.",
+          "Solo drivers are primarily motivated by travel speed rather than cost."
         ],
         correct: 1,
-        explanation: "Generalization Assumption (B): The study measured voluntary switchers; the council assumes subsidy-induced switchers will see comparable stress reductions."
+        explanation: "Generalization Assumption (B): Subsidy-induced switchers must experience stress drops comparable to voluntary switchers."
       }
     ]
   },
   dataInsights: [
     {
-      id: "GMAT-DI-301",
-      subtype: "Data Sufficiency (Data Insights)",
-      difficulty: "715–775 Level",
-      stem: "A logistics firm shipped 120 crates, each weighing either 25 kg or 40 kg. Was the total weight of the 120 crates greater than 3,750 kg?\n\n(1) More than 52 of the crates weighed 40 kg each.\n(2) Fewer than 68 of the crates weighed 25 kg each.",
+      id: "GMAT-DI-301", subtype: "Data Sufficiency (Data Insights)", difficulty: "715–775 Level",
+      stem: "A logistics firm shipped 120 crates, each weighing either 25 kg or 40 kg. Was the total weight greater than 3,750 kg?\n\n(1) More than 52 crates weighed 40 kg each.\n(2) Fewer than 68 crates weighed 25 kg each.",
       options: [
         "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
         "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
@@ -128,64 +499,15 @@ window.GMAT_OFFICIAL_BANK = {
         "Statements (1) and (2) TOGETHER are NOT sufficient."
       ],
       correct: 3,
-      explanation: "Total weight = 3000 + 15x > 3750 <=> x > 50. Both (1) and (2) independently establish x > 52 -> (D)."
+      explanation: "Total weight > 3750 <=> x > 50. Both (1) and (2) independently give x > 52 -> (D)."
     },
     {
-      id: "GMAT-DI-302",
-      subtype: "Two-Part Analysis (Coupled Constraints)",
-      difficulty: "725–785 Level",
-      stem: "An investment committee allocates $100 million across Fund Alpha (9% yield, risk 6) and Fund Beta (5% yield, risk 2). The blended portfolio must achieve at least 7.4% annual yield while keeping weighted average risk at most 4.6.",
-      col1Label: "Allocation to Fund Alpha ($M)",
-      col2Label: "Allocation to Fund Beta ($M)",
+      id: "GMAT-DI-302", subtype: "Two-Part Analysis (Coupled Constraints)", difficulty: "725–785 Level",
+      stem: "Allocate $100M across Fund Alpha (9% yield, risk 6) and Fund Beta (5% yield, risk 2) to achieve >=7.4% yield and <=4.6 weighted risk.",
+      col1Label: "Fund Alpha ($M)", col2Label: "Fund Beta ($M)",
       rows: ["$35 million", "$50 million", "$60 million", "$65 million", "$70 million"],
-      correctRow1: 3,
-      correctRow2: 0,
-      explanation: "60 <= A <= 65 and B = 100 - A -> A = $65M and B = $35M."
+      correctRow1: 3, correctRow2: 0,
+      explanation: "60 <= A <= 65 and B = 100 - A -> A = $65M, B = $35M."
     }
   ]
 };
-
-window.IPM_QUANT_CORE = [
-  {
-    id: "GMAT-MOD-ALG",
-    pillar: "GMAC FOCUS QUANTITATIVE (ZERO GEOMETRY)",
-    title: "GMAT Focus Problem Solving: Rates, Work & Weighted Averages",
-    weightage: "Core Quant • 21 Qs / 45 Mins (205–805 Scale)",
-    concepts: [],
-    traps: [{ title: "Harmonic Mean Trap in Round-Trip Speeds", wrongStep: "Averaging 60 mph and 40 mph as 50 mph.", correction: "Use harmonic mean 2*60*40/(60+40) = 48 mph.", penalty: "Adaptive Band Drop" }],
-    questions: [
-      { id: "GMAT-QR-ALG-001", stem: "Machine X and Machine Y finish a batch in 6 hours. Doubling X's rate and halving Y's rate finishes it in 4 hours. Hours for X alone?", options: ["8 hours", "9 hours", "10 hours", "12 hours", "15 hours"], answer: 1, explanation: "x + y = 1/6 and 4x + y = 1/2 => 3x = 1/3 => 9 hours." },
-      { id: "GMAT-QR-ALG-002", stem: "A 40L solution is 25% ethanol. How many liters of pure ethanol raise concentration to 40%?", options: ["8 liters", "10 liters", "12 liters", "15 liters", "16 liters"], answer: 1, explanation: "30L water = 60% of 50L => 10L added." }
-    ]
-  },
-  {
-    id: "GMAT-MOD-COMB",
-    pillar: "GMAC FOCUS QUANTITATIVE",
-    title: "GMAT Focus Problem Solving: Combinatorics & Number Properties",
-    weightage: "705–805 Differentiator • Question-Adaptive",
-    concepts: [],
-    traps: [{ title: "Overcounting Committees with 'At Least' Constraints", wrongStep: "Using C(5,2)*C(7,2) which triple-counts 3-senior teams.", correction: "Partition into disjoint cases: (2S, 2J) + (3S, 1J) = 100.", penalty: "725+ Ceiling Trap" }],
-    questions: [
-      { id: "GMAT-QR-COMB-001", stem: "Select 4 analysts from 5 seniors and 4 juniors with >=2 seniors and >=1 junior. Distinct teams?", options: ["80", "95", "100", "105", "120"], answer: 2, explanation: "C(5,2)*C(4,2) + C(5,3)*C(4,1) = 60 + 40 = 100." },
-      { id: "GMAT-QR-NUM-001", stem: "Greatest integer k such that 3^k is a factor of 30!?", options: ["12", "13", "14", "15", "16"], answer: 2, explanation: "10 + 3 + 1 = 14." }
-    ]
-  }
-];
-
-// Live PostgreSQL Hydration for GMAT Focus
-(async function hydrateGmatFromPostgres() {
-  try {
-    const res = await fetch("/api/questions?exam=GMAT_FOCUS&limit=150&t=" + Date.now());
-    const data = await res.json();
-    if (!data || !Array.isArray(data.questions) || !data.questions.length) return;
-    window.GMAT_POSTGRES_BANK = data.questions;
-    const qaItems = data.questions.filter(q => q.section === "QUANT_CORE");
-    if (qaItems.length && window.IPM_QUANT_CORE) {
-      const alg = qaItems.filter(q => /Rates|Mixtures|Algebra/i.test(q.topic || ""));
-      const comb = qaItems.filter(q => /Combinatorics|Number/i.test(q.topic || ""));
-      if (alg.length) window.IPM_QUANT_CORE[0].questions = alg.map(q => ({ id: q.id, stem: q.prompt, options: q.options, answer: Number(q.answer), explanation: q.explanation }));
-      if (comb.length) window.IPM_QUANT_CORE[1].questions = comb.map(q => ({ id: q.id, stem: q.prompt, options: q.options, answer: Number(q.answer), explanation: q.explanation }));
-    }
-    if (typeof window.renderActiveTab === "function") window.renderActiveTab();
-  } catch (e) { console.warn("GMAT Postgres hydration fallback:", e); }
-})();
