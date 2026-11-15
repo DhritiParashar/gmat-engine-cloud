@@ -1439,3 +1439,9 @@ def seed_batch3_cuet_and_indore_archive():
             })
 
 seed_batch3_cuet_and_indore_archive()
+
+try:
+    from app.seed_gmat_postgres import seed_gmat_focus_postgres
+    seed_gmat_focus_postgres(engine)
+except Exception as _gmat_seed_err:
+    print('GMAT Focus Postgres seed warning:', _gmat_seed_err)
