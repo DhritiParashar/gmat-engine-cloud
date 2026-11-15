@@ -295,3 +295,40 @@ window.IPM_QUANT_CORE = [
   }
 ];
 window.IPM_HIGHER_MATH = [];
+window.IPM_DEEP_MODULES = [];
+window.IPM_CHAPTER_REFRESHERS = window.IPM_CHAPTER_REFRESHERS || {};
+window.IPM_CHAPTER_REFRESHERS["GMAT-MOD-ALG"] = {
+  overview: "GMAT Focus Quantitative Reasoning (21 questions, 45 minutes, question-adaptive) removes Geometry and Data Sufficiency entirely, concentrating on pure Problem Solving: algebraic rate systems, weighted averages, mixtures, and multi-constraint word translations.",
+  prerequisites: [
+    "Combined Work Rate: 1/T_total = 1/T_1 + 1/T_2.",
+    "Alligation Ratio: w_1 / w_2 = (C_2 - C_avg) / (C_avg - C_1).",
+    "Harmonic Mean Speed (Equal Distances): V_avg = 2*v_1*v_2 / (v_1 + v_2)."
+  ],
+  workedExamples: [
+    {
+      level: "Foundation",
+      problem: "Machines X and Y complete a batch together in 6 hours. Doubling X's rate and halving Y's rate finishes the batch in 4 hours. Find X's solo time.",
+      solution: "x + y = 1/6 and 2x + 0.5y = 1/4 => 4x + y = 1/2. Subtracting gives 3x = 1/3 => x = 1/9 batch/hr => 9 hours alone."
+    },
+    {
+      level: "Advanced",
+      problem: "How much pure ethanol must be added to 40L of a 25% ethanol solution to raise concentration to 40%?",
+      solution: "Non-ethanol water = 30L (constant). 30L = 60% of final volume => V_final = 50L => 10L pure ethanol added."
+    }
+  ]
+};
+window.IPM_CHAPTER_REFRESHERS["GMAT-MOD-COMB"] = {
+  overview: "High-percentile GMAT Focus Quant (705–805 band) differentiates top candidates using constrained combinatorics, conditional probability without replacement, and prime-power divisibility.",
+  prerequisites: [
+    "Combinations: nCr = n! / [r!(n - r)!].",
+    "Complementary Counting: P(At least one) = 1 - P(None).",
+    "Legendre's Highest Power of Prime p in n!: sum_{k>=1} floor(n / p^k)."
+  ],
+  workedExamples: [
+    {
+      level: "Advanced",
+      problem: "Form a 4-person task force from 5 seniors and 4 juniors with at least 2 seniors and at least 1 junior.",
+      solution: "Partition into disjoint cases: (2S, 2J) = C(5,2)*C(4,2) = 60, plus (3S, 1J) = C(5,3)*C(4,1) = 40. Total = 100."
+    }
+  ]
+};
