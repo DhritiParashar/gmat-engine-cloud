@@ -187,3 +187,111 @@ window.IPM_QUANT_CORE = [
     }))
   }
 ];
+// Exhaustive GMAC GMAT Focus Chapter Refresher, Concepts, Traps & Practice Drills
+window.IPM_REFRESHERS = window.IPM_REFRESHERS || {};
+window.IPM_REFRESHERS["GMAT-MOD-ALG"] = {
+  title: "GMAT Focus Problem Solving: Rates, Work & Weighted Averages (21 Qs • Zero Geometry)",
+  summary: "GMAT Focus Quantitative Reasoning eliminates Geometry and Data Sufficiency (DS moves to Data Insights), focusing intensively on algebraic modeling, work/rate systems, mixtures, and multi-constraint word problems.",
+  keyFormulas: [
+    "Combined Work Rate: 1/T_total = 1/T_1 + 1/T_2",
+    "Alligation / Weighted Average Ratio: w_1 / w_2 = (A_2 - A_avg) / (A_avg - A_1)",
+    "Successive % Change: Net Factor = (1 + r_1)(1 + r_2)"
+  ],
+  workedExample: "x + y = 1/6 and 2x + 0.5y = 1/4 => 4x + y = 1/2. Subtracting gives 3x = 1/3 => x = 1/9 (9 hours alone)."
+};
+window.IPM_REFRESHERS["GMAT-MOD-COMB"] = {
+  title: "GMAT Focus Combinatorics, Probability & Number Properties (705–805 Level)",
+  summary: "High-percentile GMAT Focus Quant items test constrained committee selection, conditional probability without replacement, prime factorization, and divisibility parity.",
+  keyFormulas: [
+    "Combinations: nCr = n! / [r!(n - r)!]",
+    "Complementary Probability: P(At least one) = 1 - P(None)",
+    "Trailing Zeros in n!: floor(n/5) + floor(n/25) + floor(n/125) + ..."
+  ],
+  workedExample: "4 analysts from 5 Senior and 4 Junior with >=2 Senior and >=1 Junior: C(5,2)*C(4,2) + C(5,3)*C(4,1) = 10*6 + 10*4 = 100."
+};
+
+window.IPM_QUANT_CORE = [
+  {
+    id: "GMAT-MOD-ALG",
+    pillar: "GMAC FOCUS QUANTITATIVE",
+    title: "GMAT Focus Problem Solving: Rates, Work & Weighted Averages",
+    weightage: "Core Quant • 21 Qs / 45 Mins (Zero Geometry)",
+    concepts: [
+      {
+        heading: "Linear Rate Elimination",
+        formula: "r_A + r_B = 1/T_1  and  k_1*r_A + k_2*r_B = 1/T_2",
+        derivation: "Express work rates in jobs per hour so coupled rate changes form a 2x2 linear system.",
+        shortcut: "Scale one equation to match the coefficient of the unwanted machine and subtract immediately."
+      },
+      {
+        heading: "Alligation Teeter-Totter for Mixtures",
+        formula: "Quantity_Low / Quantity_High = (C_High - C_Mix) / (C_Mix - C_Low)",
+        derivation: "Weighted average deviation above the mean must balance deviation below the mean.",
+        shortcut: "Compute concentration differences directly without introducing volume variables."
+      }
+    ],
+    traps: [
+      {
+        title: "Harmonic Mean Trap in Round-Trip Speeds",
+        wrongStep: "Averaging 60 mph outbound and 40 mph return as (60 + 40)/2 = 50 mph.",
+        correction: "Equal distances require the harmonic mean: 2*60*40 / (60 + 40) = 48 mph.",
+        penalty: "Adaptive Score Drop (-30 pts)"
+      }
+    ],
+    questions: [
+      {
+        id: "GMAT-QR-Q1",
+        stem: "Machine X and Machine Y working together complete a batch in 6 hours. If X's rate doubles and Y's rate halves, they finish in 4 hours. How many hours does X alone take at its original rate?",
+        options: ["8 hours", "9 hours", "10 hours", "12 hours"],
+        answer: 1,
+        explanation: "x + y = 1/6 and 4x + y = 1/2 => 3x = 1/3 => x = 1/9 => 9 hours."
+      },
+      {
+        id: "GMAT-QR-Q2",
+        stem: "A 40-liter solution is 25% ethanol. How many liters of pure ethanol must be added to raise the concentration to 40%?",
+        options: ["8 liters", "10 liters", "12 liters", "15 liters"],
+        answer: 1,
+        explanation: "Current water = 30 liters (unchanged). At 40% ethanol, water is 60% of new volume: 0.60 * V_new = 30 => V_new = 50 liters => 10 liters added."
+      }
+    ]
+  },
+  {
+    id: "GMAT-MOD-COMB",
+    pillar: "GMAC FOCUS QUANTITATIVE",
+    title: "GMAT Focus Combinatorics, Probability & Number Properties",
+    weightage: "705–805 Differentiator • Adaptive Escalation",
+    concepts: [
+      {
+        heading: "Mutually Exclusive Case Partitioning",
+        formula: "Total = Sum over valid (Senior, Junior) splits of C(S, s) * C(J, j)",
+        derivation: "When both upper and lower bounds restrict selections, enumerate valid integer partitions first.",
+        shortcut: "Verify that s + j equals total committee size in every partition."
+      }
+    ],
+    traps: [
+      {
+        title: "Double-Counting Overlaps in 'At Least' Selections",
+        wrongStep: "Choosing 2 seniors via C(5,2) and then choosing any 2 remaining people via C(7,2).",
+        correction: "Multiplying C(5,2)*C(7,2) counts 3-senior committees three times! Partition into exact (2S, 2J) + (3S, 1J).",
+        penalty: "Classic 725+ Trap"
+      }
+    ],
+    questions: [
+      {
+        id: "GMAT-QR-Q3",
+        stem: "A task force of 4 analysts is selected from 5 senior and 4 junior analysts, requiring at least 2 senior and at least 1 junior analyst. How many distinct task forces are possible?",
+        options: ["80", "95", "100", "105"],
+        answer: 2,
+        explanation: "C(5,2)*C(4,2) + C(5,3)*C(4,1) = 10*6 + 10*4 = 100."
+      },
+      {
+        id: "GMAT-QR-Q4",
+        stem: "What is the greatest integer k such that 3^k is a factor of 30!?",
+        options: ["12", "13", "14", "15"],
+        answer: 2,
+        explanation: "Legendre's formula: floor(30/3) + floor(30/9) + floor(30/27) = 10 + 3 + 1 = 14."
+      }
+    ]
+  }
+];
+window.IPM_HIGHER_MATH = [];
