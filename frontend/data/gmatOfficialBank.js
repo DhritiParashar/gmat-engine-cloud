@@ -511,3 +511,56 @@ window.GMAT_OFFICIAL_BANK = {
     }
   ]
 };
+
+(function enrichGmatOverviews() {
+  const R = window.IPM_CHAPTER_REFRESHERS || {};
+  const specs = {
+    "GMAT-MOD-ALG": {
+      p2: "Concept Bridge: Because GMAT Focus is question-adaptive (21 questions in 45 minutes, zero Geometry, and up to 3 answer edits per section), an early careless error depresses your algorithmic difficulty ceiling. Avoid brute-force algebra: back-solve from Choice (C) when choices are clean numbers, isolate integer Diophantine constraints, and verify inequality signs before multiplying by variables.",
+      metrics: { weightage: "5–6 Qs / 21 (25–30% Quant)", targetPace: "2.0 mins / Q", format: "5-Choice PS (Zero Geometry)", strategy: "Back-Solving & Diophantine Pruning" },
+      traps: [
+        { pitfall: "Dividing Both Sides by a Variable Expression", bridge: "Dividing by (x - 3) discards the root x = 3. Always factor (x - 3)(...) = 0 instead." },
+        { pitfall: "Forgetting Principal Square Root Non-Negativity", bridge: "sqrt(x^2) = |x| >= 0, whereas x^2 = 16 has two solutions x = ±4." }
+      ]
+    },
+    "GMAT-MOD-RATE": {
+      p2: "Concept Bridge: Rather than introducing multiple time and distance variables, convert work problems into fractional hourly rates (1/T) and mixture problems into constant-mass equations or Alligation ratios. This cuts solution time from 3 minutes to under 75 seconds.",
+      metrics: { weightage: "5–6 Qs / 21 (25–30% Quant)", targetPace: "1.9 mins / Q", format: "5-Choice Problem Solving", strategy: "Additive Rates & Alligation" },
+      traps: [
+        { pitfall: "Arithmetic Mean of Outbound & Return Speeds", bridge: "Equal-distance round trips always follow the Harmonic Mean 2*v_1*v_2 / (v_1 + v_2)." },
+        { pitfall: "Tracking Changing Components in Dilution", bridge: "Track the solute or solvent whose absolute volume does not change during addition/evaporation." }
+      ]
+    },
+    "GMAT-MOD-NUM": {
+      p2: "Concept Bridge: GMAT Focus 705+ Quant relies heavily on prime-factorization structure and parity. Express integers in prime-power form p^a * q^b whenever questions ask about factors, trailing zeros, perfect squares, or divisibility.",
+      metrics: { weightage: "4–5 Qs / 21 (20–24% Quant)", targetPace: "2.0 mins / Q", format: "705–805 Adaptive Escalator", strategy: "Prime Factorization & Parity" },
+      traps: [
+        { pitfall: "Forgetting 1 and N in Divisor Counts", bridge: "Use (a + 1)(b + 1) on prime exponents; only perfect squares have an odd number of positive divisors." },
+        { pitfall: "Treating 0 as Positive or Non-Even", bridge: "0 is an even integer, neither positive nor negative, and divisible by every non-zero integer." }
+      ]
+    },
+    "GMAT-MOD-COMB": {
+      p2: "Concept Bridge: Whenever a committee or probability prompt specifies 'at least' or 'at most', immediately decide between Complementary Counting (Total - Unwanted) and Disjoint Case Partitioning—never multiply overlapping combinations.",
+      metrics: { weightage: "3–4 Qs / 21 (15–19% Quant)", targetPace: "2.1 mins / Q", format: "5-Choice Problem Solving", strategy: "Disjoint Partitions & Complement" },
+      traps: [
+        { pitfall: "Double-Counting Overlaps in 'At Least' Selections", bridge: "C(5,2)*C(7,2) triple-counts 3-senior teams. Partition into exact (2S, 2J) + (3S, 1J)." },
+        { pitfall: "Ignoring Replacement Status in Sequential Draws", bridge: "Without replacement reduces both numerator and denominator by 1 on each subsequent draw." }
+      ]
+    },
+    "GMAT-MOD-SEQ": {
+      p2: "Concept Bridge: In evenly spaced sets (arithmetic progressions), Mean and Median are identical, and adding a constant to every term shifts the Mean/Median by that constant while leaving Standard Deviation completely unchanged.",
+      metrics: { weightage: "3–4 Qs / 21 (15–19% Quant)", targetPace: "1.8 mins / Q", format: "5-Choice Problem Solving", strategy: "Mean-Median Symmetry & SD Shift" },
+      traps: [
+        { pitfall: "Off-by-One Errors in Inclusive Counting", bridge: "Number of terms from a to b inclusive is (b - a)/d + 1—never forget the +1." },
+        { pitfall: "Recomputing Full Standard Deviation After Shifts", bridge: "SD(X + c) = SD(X) and SD(kX) = |k|*SD(X); no root calculation needed." }
+      ]
+    }
+  };
+  for (const [id, cfg] of Object.entries(specs)) {
+    if (R[id]) {
+      R[id].overviewParagraphs = [R[id].overview, cfg.p2];
+      R[id].examMetrics = cfg.metrics;
+      R[id].conceptBridgeTraps = cfg.traps;
+    }
+  }
+})();
