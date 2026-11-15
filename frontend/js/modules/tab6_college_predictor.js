@@ -1,6 +1,6 @@
 window.GMAT_ADMIT_STATE = window.GMAT_ADMIT_STATE || {
   qr: 85, vr: 84, di: 83,
-  ugGpa: 3.65, workExYears: 4.0,
+  ugCgpa10: 9.1, ugGpa: 3.64, workExYears: 4.0,
   track: "MBA", leadershipTier: "STRONG"
 };
 
@@ -13,6 +13,8 @@ window.calcGmatFocusTotal = function () {
 
 window.updateGmatAdmitField = function (field, val) {
   window.GMAT_ADMIT_STATE[field] = (field === "track" || field === "leadershipTier") ? String(val) : Number(val);
+  if (field === "ugCgpa10") { window.GMAT_ADMIT_STATE.ugGpa = Number(((window.GMAT_ADMIT_STATE.ugCgpa10 / 10) * 4.0).toFixed(2)); }
+  if (field === "ugGpa") { window.GMAT_ADMIT_STATE.ugCgpa10 = Number(((window.GMAT_ADMIT_STATE.ugGpa / 4.0) * 10).toFixed(1)); }
   window.renderActiveTab();
 };
 
@@ -73,7 +75,7 @@ window.renderTab6 = function (el) {
         </div>
         <div class="bg-slate-900/95 border border-slate-800 rounded-2xl p-4 space-y-3">
           <div class="text-xs font-bold uppercase text-indigo-300">2. Undergraduate GPA &amp; Post-Grad Experience</div>
-          <div><div class="flex justify-between text-xs text-slate-300"><span>Undergraduate GPA (4.0 Scale)</span><strong>${s.ugGpa.toFixed(2)} / 4.00</strong></div><input type="range" min="2.5" max="4.0" step="0.05" value="${s.ugGpa}" oninput="window.updateGmatAdmitField('ugGpa', this.value)" class="w-full accent-indigo-500"></div>
+          <div><div class="flex justify-between text-xs text-slate-300"><span>Undergrad CGPA (10-Pt Scale)</span><strong>${(s.ugCgpa10 || 9.1).toFixed(1)} / 10 &rarr; ${s.ugGpa.toFixed(2)} / 4.0 GPA</strong></div><input type="range" min="5.5" max="10.0" step="0.1" value="${s.ugCgpa10 || 9.1}" oninput="window.updateGmatAdmitField('ugCgpa10', this.value)" class="w-full accent-indigo-500"></div>
           <div><div class="flex justify-between text-xs text-slate-300"><span>Full-Time Work Experience</span><strong>${s.workExYears.toFixed(1)} Years</strong></div><input type="range" min="0" max="10" step="0.5" value="${s.workExYears}" oninput="window.updateGmatAdmitField('workExYears', this.value)" class="w-full accent-indigo-500"></div>
           <div class="text-[11px] text-slate-400">Global AdComs evaluate Undergrad GPA + Post-Grad Career Trajectory (0% weight on Class X/XII school marks).</div>
         </div>
