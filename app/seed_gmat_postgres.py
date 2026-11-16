@@ -20,7 +20,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (2x)/2 = (3y)/3 = 3, yielding maximum 243.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -42,7 +42,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (3x)/2 = (4y)/3 = 4, yielding maximum 192.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -64,7 +64,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (3x)/2 = (5y)/3 = 5, yielding maximum 300.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -86,7 +86,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (4x)/3 = (3y)/2 = 4, yielding maximum 192.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -108,7 +108,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (5x)/2 = (2y)/3 = 5, yielding maximum 1688.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -130,7 +130,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (2x)/3 = (5y)/2 = 5, yielding maximum 1688.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -152,7 +152,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (3x)/4 = (2y)/2 = 3, yielding maximum 2304.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -174,7 +174,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (4x)/2 = (5y)/2 = 4, yielding maximum 10.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -196,7 +196,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (6x)/2 = (4y)/3 = 6, yielding maximum 364.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -218,7 +218,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (2x)/3 = (4y)/3 = 4, yielding maximum 5832.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -240,7 +240,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (5x)/3 = (3y)/2 = 5, yielding maximum 300.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -262,7 +262,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (3x)/3 = (4y)/2 = 5, yielding maximum 781.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -284,7 +284,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (2x)/2 = (6y)/4 = 4, yielding maximum 809.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -306,7 +306,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (7x)/2 = (3y)/5 = 5, yielding maximum 82016.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -328,7 +328,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Weighted AM-GM sets (4x)/3 = (6y)/3 = 5, yielding maximum 824.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -350,7 +350,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 80 * (1 - 8/80) * (1 - 16/80) = 57.6 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -372,7 +372,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 90 * (1 - 9/90) * (1 - 18/90) = 64.8 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -394,7 +394,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 100 * (1 - 10/100) * (1 - 20/100) = 72 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -416,7 +416,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 120 * (1 - 12/120) * (1 - 24/120) = 86.4 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -438,7 +438,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 60 * (1 - 6/60) * (1 - 12/60) = 43.2 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -460,7 +460,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 75 * (1 - 15/75) * (1 - 25/75) = 40 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -482,7 +482,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 60 * (1 - 12/60) * (1 - 15/60) = 36 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -504,7 +504,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 100 * (1 - 20/100) * (1 - 25/100) = 60 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -526,7 +526,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 80 * (1 - 16/80) * (1 - 20/80) = 48 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -548,7 +548,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 90 * (1 - 18/90) * (1 - 30/90) = 48 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -570,7 +570,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 120 * (1 - 24/120) * (1 - 30/120) = 72 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -592,7 +592,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 150 * (1 - 15/150) * (1 - 30/150) = 108 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -614,7 +614,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 200 * (1 - 20/200) * (1 - 40/200) = 144 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -636,7 +636,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 64 * (1 - 8/64) * (1 - 16/64) = 42 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -658,7 +658,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 72 * (1 - 9/72) * (1 - 18/72) = 47.25 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -680,7 +680,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 100 * (1 - 15/100) * (1 - 20/100) = 68 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -702,7 +702,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 80 * (1 - 10/80) * (1 - 20/80) = 52.5 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -724,7 +724,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 120 * (1 - 20/120) * (1 - 30/120) = 75 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -746,7 +746,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 90 * (1 - 15/90) * (1 - 18/90) = 60 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -768,7 +768,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 100 * (1 - 25/100) * (1 - 20/100) = 60 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -790,7 +790,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 50 * (1 - 10/50) * (1 - 10/50) = 32 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -812,7 +812,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 80 * (1 - 20/80) * (1 - 20/80) = 45 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -834,7 +834,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 100 * (1 - 30/100) * (1 - 30/100) = 49 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -856,7 +856,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 120 * (1 - 30/120) * (1 - 40/120) = 60 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -878,7 +878,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Remaining = 200 * (1 - 40/200) * (1 - 50/200) = 120 liters.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -900,7 +900,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 240 gives 20 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -922,7 +922,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 360 gives 24 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -944,7 +944,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 480 gives 24 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -966,7 +966,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 540 gives 24 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -988,7 +988,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 600 gives 24 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1010,7 +1010,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 720 gives 30 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1032,7 +1032,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 840 gives 32 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1054,7 +1054,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 900 gives 27 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1076,7 +1076,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 960 gives 28 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1098,7 +1098,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1080 gives 32 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1120,7 +1120,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1200 gives 30 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1142,7 +1142,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1440 gives 36 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1164,7 +1164,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1800 gives 36 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1186,7 +1186,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 2160 gives 40 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1208,7 +1208,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 2520 gives 48 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1230,7 +1230,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 300 gives 18 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1252,7 +1252,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 420 gives 24 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1274,7 +1274,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 660 gives 24 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1296,7 +1296,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 780 gives 24 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1318,7 +1318,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1000 gives 16 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1340,7 +1340,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1260 gives 36 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1362,7 +1362,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1320 gives 32 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1384,7 +1384,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1500 gives 24 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1406,7 +1406,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1680 gives 40 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1428,7 +1428,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 1920 gives 32 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1450,7 +1450,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 2000 gives 20 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1472,7 +1472,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 2100 gives 36 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1494,7 +1494,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 2400 gives 36 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1516,7 +1516,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 2700 gives 36 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1538,7 +1538,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 3000 gives 32 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1560,7 +1560,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 3200 gives 24 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1582,7 +1582,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 3360 gives 48 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1604,7 +1604,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 3600 gives 45 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1626,7 +1626,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 3960 gives 48 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1648,7 +1648,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 4200 gives 48 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1670,7 +1670,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 4500 gives 36 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1692,7 +1692,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 4800 gives 42 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1714,7 +1714,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 5040 gives 60 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1736,7 +1736,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 5400 gives 48 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1758,7 +1758,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 6000 gives 40 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1780,7 +1780,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 6300 gives 54 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1802,7 +1802,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 7200 gives 54 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1824,7 +1824,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 7560 gives 64 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1846,7 +1846,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 8400 gives 60 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1868,7 +1868,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 9000 gives 48 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1890,7 +1890,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 9600 gives 48 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1912,7 +1912,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 10080 gives 72 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1934,7 +1934,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 10800 gives 60 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1956,7 +1956,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 12600 gives 72 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -1978,7 +1978,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "Prime factorization of 14400 gives 63 positive divisors.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2000,7 +2000,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2022,7 +2022,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2044,7 +2044,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2066,7 +2066,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2088,7 +2088,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2110,7 +2110,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2132,7 +2132,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2154,7 +2154,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2176,7 +2176,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2198,7 +2198,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2220,7 +2220,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2242,7 +2242,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2264,7 +2264,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2286,7 +2286,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2308,7 +2308,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2330,7 +2330,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2352,7 +2352,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2374,7 +2374,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2396,7 +2396,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2418,7 +2418,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2440,7 +2440,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2462,7 +2462,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2484,7 +2484,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2506,7 +2506,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2528,7 +2528,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2550,7 +2550,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2572,7 +2572,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2594,7 +2594,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2616,7 +2616,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2638,7 +2638,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2660,7 +2660,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2682,7 +2682,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2704,7 +2704,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2726,7 +2726,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2748,7 +2748,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2770,7 +2770,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2792,7 +2792,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2814,7 +2814,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2836,7 +2836,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2858,7 +2858,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2880,7 +2880,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2902,7 +2902,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2924,7 +2924,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2946,7 +2946,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2968,7 +2968,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -2990,7 +2990,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3012,7 +3012,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3034,7 +3034,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3056,7 +3056,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3078,7 +3078,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3100,7 +3100,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3122,7 +3122,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3144,7 +3144,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3166,7 +3166,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3188,7 +3188,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3210,7 +3210,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3232,7 +3232,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3254,7 +3254,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3276,7 +3276,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3298,7 +3298,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3320,7 +3320,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3342,7 +3342,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3364,7 +3364,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3386,7 +3386,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3408,7 +3408,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3430,7 +3430,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3452,7 +3452,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3474,7 +3474,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3496,7 +3496,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3518,7 +3518,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3540,7 +3540,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3562,7 +3562,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3584,7 +3584,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3606,7 +3606,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3628,7 +3628,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3650,7 +3650,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3672,7 +3672,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3694,7 +3694,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3716,7 +3716,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3738,7 +3738,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3760,7 +3760,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "4",
     "explanation": "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 2.5 fails (1) and x = -6 works => insufficient.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3782,7 +3782,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "lcm(6, 4) = 12 => combining (1) and (2) guarantees divisibility by 12.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3804,7 +3804,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "Div A: $24M vs $25M (-$1M). Div B: $18M vs $15M (+$3M). Net change = +$2.0M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3826,7 +3826,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "3",
     "explanation": "0.20 * 140 = 28 vs initial 25 => (28 - 25)/25 = +12%.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3848,7 +3848,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "2",
     "explanation": "0.06*(100 - M) + 0.11*M = 8.2 => 0.05*M = 2.2 => M = $44M.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3870,7 +3870,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3892,7 +3892,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3914,7 +3914,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3936,7 +3936,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3958,7 +3958,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -3980,7 +3980,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4002,7 +4002,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4024,7 +4024,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4046,7 +4046,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4068,7 +4068,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4090,7 +4090,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4112,7 +4112,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4134,7 +4134,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4156,7 +4156,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4178,7 +4178,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4200,7 +4200,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4222,7 +4222,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4244,7 +4244,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4266,7 +4266,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4288,7 +4288,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4310,7 +4310,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4332,7 +4332,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4354,7 +4354,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4376,7 +4376,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4398,7 +4398,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4420,7 +4420,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4442,7 +4442,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4464,7 +4464,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4486,7 +4486,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4508,7 +4508,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4530,7 +4530,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4552,7 +4552,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4574,7 +4574,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4596,7 +4596,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4618,7 +4618,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4640,7 +4640,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4662,7 +4662,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4684,7 +4684,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4706,7 +4706,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4728,7 +4728,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4750,7 +4750,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4772,7 +4772,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4794,7 +4794,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4816,7 +4816,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4838,7 +4838,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4860,7 +4860,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4882,7 +4882,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4904,7 +4904,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4926,7 +4926,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4948,7 +4948,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4970,7 +4970,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -4992,7 +4992,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5014,7 +5014,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5036,7 +5036,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5058,7 +5058,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5080,7 +5080,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5102,7 +5102,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5124,7 +5124,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5146,7 +5146,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5168,7 +5168,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5190,7 +5190,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5212,7 +5212,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5234,7 +5234,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5256,7 +5256,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5278,7 +5278,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5300,7 +5300,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5322,7 +5322,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5344,7 +5344,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5366,7 +5366,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5388,7 +5388,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5410,7 +5410,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5432,7 +5432,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5454,7 +5454,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5476,7 +5476,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5498,7 +5498,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5520,7 +5520,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5542,7 +5542,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5564,7 +5564,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5586,7 +5586,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5608,7 +5608,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5630,7 +5630,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Boldface 1 introduces the policy context; Boldface 2 ('Therefore...') states the main conclusion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5652,7 +5652,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "The argument assumes a trait observed among winners guarantees future winning (necessity-vs-sufficiency assumption).",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5674,7 +5674,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Mathematical isomorphism across paradigm shifts directly validates structural continuity.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5696,7 +5696,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Strategic behavioral adaptation to game an opaque model directly exemplifies reflexive drift.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   },
@@ -5718,7 +5718,7 @@ GMAT_2026_QUESTIONS = [
     ],
     "answer": "0",
     "explanation": "Induced demand directly undermines the claim that widening roads permanently eliminates congestion.",
-    "is_pyq": false,
+    "is_pyq": False,
     "pyq_year": "2026",
     "pyq_exam": "GMAT Focus"
   }
