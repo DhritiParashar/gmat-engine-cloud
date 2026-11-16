@@ -1,6 +1,6 @@
 // ==============================================================================
-// GMAT FOCUS TAB 3: VERBAL STUDIO (CR & RC • ZERO SENTENCE CORRECTION)
-// Independent Left & Right Split-Pane Workspace + Live PostgreSQL CR/RC Pool
+// GMAT FOCUS TAB 3: FULL-DEPTH VERBAL STUDIO (CR & RC • ZERO SENTENCE CORRECTION)
+// Independent Left & Right Split-Pane Workspace + Live GMAT Verbal PYQ Sync
 // ==============================================================================
 (function () {
   const GMAT_VERBAL_MODULES = [
@@ -9,17 +9,24 @@
       code: "MODULE 1 OF 5",
       title: "Critical Reasoning: Necessary & Sufficient Assumptions",
       sub: "5–6 Qs per Test • Negation Test & Gap-Bridging Logic",
-      overview: "GMAT Focus Critical Reasoning eliminates Sentence Correction entirely, elevating Assumption family questions to ~30% of Verbal Reasoning. A Necessary Assumption is a premise without which the author's conclusion collapses; a Sufficient Assumption guarantees the conclusion 100%.",
-      bridge: "Concept Bridge (The Negation Test): Logically negate the candidate answer choice (e.g., 'all' -> 'not all'; 'will' -> 'may not'). If the negated statement destroys the conclusion, it is the correct Necessary Assumption.",
-      prereq: "Prerequisites & Core Identities: Separate Premise (fact/evidence) from Conclusion (claim/recommendation). Never pick an out-of-scope extreme choice ('only', 'never', 'must') on a Necessary Assumption question.",
+      overview: "GMAT Focus Critical Reasoning eliminates Sentence Correction entirely, elevating Assumption-family questions to ~30% of Verbal Reasoning. A Necessary Assumption is a required link without which the author's conclusion collapses; a Sufficient Assumption is a strong rule that guarantees the conclusion 100%.",
+      bridge: "Concept Bridge (The Negation Test): Logically negate the candidate answer choice ('all' -> 'not all'; 'will' -> 'may not'; 'primary' -> 'not primary'). If the negated statement destroys the conclusion, it is the correct Necessary Assumption.",
+      prereq: "Prerequisites & Core Identities: Separate Premise (evidence/data) from Conclusion (prediction/claim). Eliminate extreme choices ('only', 'never', 'must') on Necessary Assumption items, but embrace strong universal rules on Sufficient Assumption items.",
+      workedExample: {
+        stimulus: "Municipal water utility analysts noted that households fitted with smart flow meters cut water consumption by 22% over six months. Therefore, installing smart flow meters in every residence citywide will reduce total municipal water demand by at least 20%.",
+        question: "Which of the following is an assumption on which the argument depends?",
+        correctChoice: "Commercial and industrial users do not account for the overwhelming majority of total municipal water demand.",
+        breakdown: "1. Gap: Evidence is about *households* (-22%), while the conclusion is about *total municipal water demand* (-20%).\n2. Negation Test: Suppose commercial/industrial factories use 90% of municipal water. Even a 22% drop in the remaining 10% residential share reduces total city demand by only 2.2%, falsifying the 20% claim."
+      },
       shortcuts: [
         "1. Gap-Finder Scan: Compare the key noun phrase in the final premise with the new concept introduced in the conclusion—the correct answer bridges those exact two terms.",
-        "2. Defender Type vs. Supporter Type: Look out for 'Defender' choices that rule out an alternative cause that would otherwise invalidate the conclusion.",
-        "3. Sufficient vs. Necessary Direction: If the stem asks 'properly drawn if which is assumed', look for a strong rule (Sufficient); if it asks 'depends on which', look for a modest requirement (Necessary)."
+        "2. Defender vs. Supporter Type: Watch for 'Defender' choices that rule out an alternative factor that would otherwise undermine the conclusion.",
+        "3. Sufficient vs. Necessary Direction: 'Properly drawn if which is assumed' = Sufficient (strong premise -> conclusion). 'Depends on which' = Necessary (conclusion -> required condition)."
       ],
       drills: [
-        { q: "Premise: Solar panel installation costs fell 40% this year. Conclusion: Therefore, residential solar adoption will double next year. Which is a necessary assumption?", opts: ["A) Government subsidies will increase next year.", "B) Installation cost is the primary barrier preventing homeowners from adopting solar.", "C) Grid electricity prices will rise by at least 20%.", "D) All homeowners have roof space suitable for solar panels.", "E) Battery storage technology will become twice as efficient."], ans: 1, exp: "Negating (B): If installation cost is NOT a primary barrier (e.g., HOA bans or grid hookup delays block adoption), falling costs will not double adoption." },
-        { q: "Premise: Every employee who completed the Python bootcamp was promoted within six months. Ravi was promoted within four months. Which additional premise guarantees Ravi completed the Python bootcamp?", opts: ["A) Most promoted employees took the Python bootcamp.", "B) Only employees who completed the Python bootcamp were promoted within six months.", "C) Ravi scored highest on the technical assessment.", "D) No employee was promoted without managerial approval.", "E) The Python bootcamp is mandatory for senior analysts."], ans: 1, exp: "Sufficient Assumption requires reversing the conditional: 'Promoted within 6 months -> Completed bootcamp', which is stated by 'Only employees who completed... were promoted' (B)." }
+        { q: "Premise: Solar panel installation costs fell 40% this year. Conclusion: Therefore, residential solar adoption will double next year. Which is a necessary assumption?", opts: ["A) Government subsidies will increase next year.", "B) Installation cost is a primary barrier preventing homeowners from adopting solar.", "C) Grid electricity prices will rise by at least 20%.", "D) All homeowners have roof space suitable for solar panels.", "E) Battery storage technology will become twice as efficient."], ans: 1, exp: "Negating (B): If installation cost is NOT a primary barrier (e.g., HOA bans or grid hookup delays block adoption), falling costs will not double adoption." },
+        { q: "Premise: Every employee who completed the Python bootcamp was promoted within six months. Ravi was promoted within four months. Which additional premise guarantees Ravi completed the Python bootcamp?", opts: ["A) Most promoted employees took the Python bootcamp.", "B) Only employees who completed the Python bootcamp were promoted within six months.", "C) Ravi scored highest on the technical assessment.", "D) No employee was promoted without managerial approval.", "E) The Python bootcamp is mandatory for senior analysts."], ans: 1, exp: "Sufficient Assumption requires reversing the conditional: 'Promoted within 6 months -> Completed bootcamp', which is stated by 'Only employees who completed... were promoted' (B)." },
+        { q: "Premise: Switching hospital surgical checklists from paper to tablet software cut missing-item errors by 60% in a 12-week pilot. Conclusion: Permanent adoption will sustain a 60% error reduction. Necessary assumption?", opts: ["A) Tablet software costs less than paper forms.", "B) The 60% drop was not merely a temporary novelty effect of being closely observed during the pilot.", "C) Surgeons prefer tablets over paper.", "D) Other hospitals have already adopted tablet checklists.", "E) All surgical errors are caused by missing checklist items."], ans: 1, exp: "Negating (B): If the drop was a temporary Hawthorne/novelty effect during the 12-week trial, permanent adoption will not sustain the 60% reduction." }
       ]
     },
     {
@@ -30,13 +37,20 @@
       overview: "Weaken and Strengthen items test whether you can attack or reinforce the inferential link between evidence and conclusion—most commonly correlation-vs-causation leaps, unrepresentative survey samples, or raw numbers confused with percentages.",
       bridge: "Concept Bridge (3-Way Causal Attack): To weaken 'X caused Y', either (1) introduce an Alternative Cause Z, (2) show Reverse Causation (Y caused X), or (3) show X occurred without Y (or Y without X).",
       prereq: "Prerequisites & Core Identities: Never argue with the stated premises—accept them as 100% true and target the unstated assumption connecting them to the conclusion.",
+      workedExample: {
+        stimulus: "A regional airline introduced free onboard Wi-Fi on its business routes in Q2 and saw business-class ticket revenue rise 18% in Q3. Management concluded that free Wi-Fi drove the revenue surge.",
+        question: "Which of the following, if true, most seriously weakens management's conclusion?",
+        correctChoice: "A major competing carrier suspended all flights on those same business routes at the start of Q3.",
+        breakdown: "1. Causal Claim: Free Wi-Fi (X) -> 18% revenue jump (Y).\n2. Alternative Cause (Z): Competitor exit in Q3 forced stranded business travelers onto this airline regardless of Wi-Fi."
+      },
       shortcuts: [
         "1. Number vs. Percentage Trap: An increase in total hospital admissions does NOT prove higher illness rates if the city population grew faster.",
         "2. Self-Selection Bias: Online polls or voluntary customer surveys over-represent extreme opinions and fail to generalize to the broader population.",
-        "3. Plan-Goal Evaluation: When the conclusion is a policy plan ('The city should ban cars downtown to cut pollution'), weaken by showing a side-effect that defeats the goal (e.g., rerouted traffic increases idling emissions)."
+        "3. Plan-Goal Evaluation: When the conclusion is a policy plan ('Ban cars downtown to cut pollution'), weaken by showing a side-effect that defeats the goal (e.g., rerouted traffic increases idling emissions)."
       ],
       drills: [
-        { q: "A study found that executives who read fiction daily report 30% lower stress than those who do not. Thus, reading fiction reduces executive stress. Which most seriously weakens this argument?", opts: ["A) Non-fiction readers also report lower stress than non-readers.", "B) Executives with manageable workloads have more free time to read fiction daily.", "C) Most fiction books are read in the evening rather than during work hours.", "D) Some executives listen to audiobooks instead of reading print.", "E) Stress levels vary across different industries."], ans: 1, exp: "(B) establishes Reverse Causation / Confounding Factor: lower workload causes both lower stress and the free time to read fiction." }
+        { q: "A study found that executives who read fiction daily report 30% lower stress than those who do not. Thus, reading fiction reduces executive stress. Which most seriously weakens this argument?", opts: ["A) Non-fiction readers also report lower stress than non-readers.", "B) Executives with manageable workloads have more free time to read fiction daily.", "C) Most fiction books are read in the evening rather than during work hours.", "D) Some executives listen to audiobooks instead of reading print.", "E) Stress levels vary across different industries."], ans: 1, exp: "(B) establishes Reverse Causation / Confounding Factor: lower workload causes both lower stress and the free time to read fiction." },
+        { q: "In a voluntary website survey, 82% of respondents said they favor stricter data-privacy regulations. A tech columnist concluded that over four-fifths of all internet users support stricter rules. Primary logical flaw?", opts: ["A) Confusing a necessary condition with a sufficient condition.", "B) Generalizing from a self-selected sample that may not represent all internet users.", "C) Failing to define what constitutes a data-privacy regulation.", "D) Relying on outdated survey data.", "E) Appealing to popular opinion to establish truth."], ans: 1, exp: "Voluntary website respondents are self-selected (privacy-conscious users are far more likely to click and respond), creating severe sampling bias (B)." }
       ]
     },
     {
@@ -47,6 +61,12 @@
       overview: "Boldface questions appear heavily once your adaptive trajectory crosses 675+. Rather than evaluating truth, you classify the structural role of one or two boldfaced statements inside an argument containing competing viewpoints.",
       bridge: "Concept Bridge (Two-Speaker Map): Label every sentence before reading the choices: [BG] Background Fact, [OPP] Opposing Claim, [EV] Author's Evidence, [IC] Intermediate Conclusion, or [MC] Main Conclusion.",
       prereq: "Prerequisites & Core Identities: Pivot words ('However', 'Yet', 'Nevertheless') almost always separate the Opposing Viewpoint from the Author's Main Conclusion or Counter-Evidence.",
+      workedExample: {
+        stimulus: "Many urban planners contend that [BF1: widening urban highways permanently eliminates peak-hour congestion]. Yet longitudinal traffic studies across 30 metropolitan areas show that [BF2: expanded road capacity induces additional commuter driving within three years], restoring original delay times.",
+        question: "In the argument above, the two boldfaced portions play which of the following roles?",
+        correctChoice: "The first is a position that the argument seeks to refute; the second is an empirical finding cited to undermine that position.",
+        breakdown: "1. Signal 'Many urban planners contend' + 'Yet' -> BF1 is the Opposing Position [OPP].\n2. 'Longitudinal traffic studies show' -> BF2 is Empirical Evidence [EV] refuting BF1."
+      },
       shortcuts: [
         "1. Predict Roles First: Before looking at Choices A–E, write down 'First = Opposing position; Second = Evidence supporting author's main conclusion' and eliminate any choice that mislabels either role.",
         "2. Intermediate vs. Main Conclusion: If Statement X supports Statement Y, then X is an Intermediate Conclusion (and a premise for Y), never the Main Conclusion.",
@@ -64,6 +84,12 @@
       overview: "Paradox questions present two seemingly contradictory facts and ask for a new fact that allows both to be true simultaneously. Inference ('Must Be True') questions have NO conclusion—you must deduce a statement 100% supported by the text without outside assumptions.",
       bridge: "Concept Bridge (Subgroup Split): Whenever overall averages rise while every individual segment falls (Simpson's Paradox), the resolution is a shift in mix/volume toward the higher-priced or higher-rate segment.",
       prereq: "Prerequisites & Core Identities: On Inference questions, avoid strong words ('all', 'always', 'best', 'causes') and favor cautious, provable quantifiers ('some', 'at least one', 'not all').",
+      workedExample: {
+        stimulus: "Between 2022 and 2025, an automaker's average profit margin per vehicle sold rose from 8% to 11%, even though the profit margin on every individual model it manufactures declined over that same period.",
+        question: "Which of the following, if true, best resolves the apparent discrepancy?",
+        correctChoice: "Sales volume shifted dramatically away from low-margin compact sedans toward high-margin luxury SUVs.",
+        breakdown: "1. Paradox: Every model's margin fell, yet the overall average margin rose.\n2. Mix Shift: If luxury SUVs (15% -> 13% margin) grew from 20% to 75% of total sales, the weighted average rises from 8% to 11%."
+      },
       shortcuts: [
         "1. Paradox Checklist: A valid resolution must explain BOTH sides of the tension—if it only explains Fact 1 while ignoring Fact 2, eliminate it.",
         "2. Inference Overlap Rule: If 'Most A are B' (>50%) and 'Most A are C' (>50%), it MUST be true that 'Some B are C' (pigeonhole overlap).",
@@ -81,13 +107,19 @@
       overview: "GMAT Reading Comprehension tests structural synthesis across dense 250–350 word passages in Economics, Evolutionary Biology, Astrophysics, and Social History. High scorers read for structural function—not memorizing technical jargon.",
       bridge: "Concept Bridge (Paragraph Role Map): Summarize each paragraph in 5 words: P1 = Old Theory; P2 = New Evidence Challenging Theory; P3 = Author's Qualified Synthesis.",
       prereq: "Prerequisites & Core Identities: Distinguish between the Author's Tone (typically analytical, cautious, qualified) and the Tone of Cited Scholars.",
+      workedExample: {
+        stimulus: "Passage Excerpt: 'While early economists attributed industrial clustering solely to transport cost savings, recent empirical studies highlight localized knowledge spillovers among specialized engineers as the decisive driver in modern technology hubs.'",
+        question: "What is the primary structural function of this sentence?",
+        correctChoice: "To contrast a traditional explanation of industrial clustering with more recent empirical findings.",
+        breakdown: "1. Pivot Structure: 'While early economists attributed [Old View]..., recent empirical studies highlight [New View]...'.\n2. Eliminate choices claiming the author 'disproves' or 'criticizes' early economists—the tone is purely comparative."
+      },
       shortcuts: [
         "1. Main Point Formula: Combine the topic + the author's primary purpose ('evaluate a recent challenge to...', 'reconcile two competing explanations of...').",
         "2. Specific Detail Proof: Never answer a 'According to the passage' question from memory—verify the exact sentence in the left passage pane before clicking.",
         "3. Trap Answer Patterns: Eliminate choices that (a) distort degree ('disproves' vs. 'questions'), (b) swap relationships between two groups, or (c) bring in outside facts."
       ],
       drills: [
-        { q: "Passage Excerpt: 'While early economists attributed industrial clustering solely to transport cost savings, recent empirical studies highlight localized knowledge spillovers among specialized engineers as the decisive driver in modern technology hubs.' What is the primary purpose of this excerpt?", opts: ["A) To prove that transport costs no longer affect manufacturing.", "B) To contrast a traditional explanation of industrial clustering with more recent empirical findings.", "C) To argue that technology hubs require government R&D subsidies.", "D) To criticize early economists for ignoring empirical data.", "E) To show that engineering talent is evenly distributed across cities."], ans: 1, exp: "The contrast structure ('While early economists attributed... recent empirical studies highlight...') directly matches (B)." }
+        { q: "Passage Excerpt: 'Although deep-sea hydrothermal vents lack sunlight, chemosynthetic bacteria oxidize hydrogen sulfide to fix carbon, sustaining dense ecosystems independent of photosynthesis.' What can be inferred from this excerpt?", opts: ["A) Most marine organisms rely on chemosynthesis rather than photosynthesis.", "B) Sunlight is not an absolute prerequisite for sustaining complex biological ecosystems.", "C) Hydrogen sulfide is toxic to all surface-dwelling bacteria.", "D) Hydrothermal vents exist in every ocean basin.", "E) Chemosynthetic bacteria evolved earlier than photosynthetic plants."], ans: 1, exp: "Because dense vent ecosystems thrive without sunlight via chemosynthesis, sunlight is not strictly required for all ecosystems (B)." }
       ]
     }
   ];
@@ -126,6 +158,15 @@
           <p class="text-sm text-slate-800 dark:text-slate-200 leading-relaxed font-medium"><strong>${m.bridge.split(":")[0]}:</strong>${m.bridge.slice(m.bridge.indexOf(":") + 1)}</p>
           <p class="text-xs text-indigo-700 dark:text-indigo-300 leading-relaxed"><strong>${m.prereq.split(":")[0]}:</strong>${m.prereq.slice(m.prereq.indexOf(":") + 1)}</p>
         </div>
+
+        <div class="p-5 rounded-2xl bg-indigo-50/60 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-800 space-y-2.5">
+          <div class="text-[11px] font-extrabold uppercase tracking-wider text-indigo-700 dark:text-indigo-300">WORKED OFFICIAL-STYLE GMAT WALKTHROUGH</div>
+          <p class="text-xs italic text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 p-3 rounded-xl border border-slate-200 dark:border-slate-800">"${m.workedExample.stimulus}"</p>
+          <p class="text-xs font-extrabold text-slate-900 dark:text-white">${m.workedExample.question}</p>
+          <div class="text-xs font-bold text-emerald-700 dark:text-emerald-300">Target Answer: ${m.workedExample.correctChoice}</div>
+          <pre class="text-xs text-slate-600 dark:text-slate-300 whitespace-pre-wrap font-sans leading-relaxed">${m.workedExample.breakdown}</pre>
+        </div>
+
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
           <div class="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800"><div class="text-[10px] font-extrabold text-slate-400 uppercase">EXAM WEIGHTAGE</div><div class="font-extrabold mt-1">23 Qs / 45 Mins</div></div>
           <div class="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800"><div class="text-[10px] font-extrabold text-slate-400 uppercase">TARGET PACE</div><div class="font-extrabold mt-1">1.8 – 2.0 Mins / Q</div></div>
@@ -160,7 +201,7 @@
     `;
 
     target.innerHTML = `
-      <div class="max-w-7xl mx-auto my-4">
+      <div class="max-w-7xl mx-auto my-3">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 split-pane-layout">
           <div class="lg:col-span-4 space-y-2.5 split-pane-left pane-scroll">
             <div class="text-[11px] font-extrabold uppercase tracking-wider text-indigo-600 px-1">GMAT VERBAL REASONING MODULES (5 CHAPTERS)</div>
@@ -174,7 +215,7 @@
                 <button type="button" onclick="window._GMAT_VR_SUBTAB='theory'; window.renderGmatVerbalStudio3();"
                   class="px-4 py-2 rounded-full text-xs font-extrabold cursor-pointer ${sub === "theory" ? "bg-indigo-600 text-white" : "bg-slate-100 text-slate-700"}">Chapter Refresher &amp; Theory</button>
                 <button type="button" onclick="window._GMAT_VR_SUBTAB='drills'; window.renderGmatVerbalStudio3();"
-                  class="px-4 py-2 rounded-full text-xs font-extrabold cursor-pointer ${sub === "drills" ? "bg-indigo-600 text-white" : "bg-slate-100 text-slate-700"}">Shortcuts &amp; Practice Drills</button>
+                  class="px-4 py-2 rounded-full text-xs font-extrabold cursor-pointer ${sub === "drills" ? "bg-indigo-600 text-white" : "bg-slate-100 text-slate-700"}">Shortcuts &amp; Practice Drills (${m.drills.length})</button>
               </div>
             </div>
             ${rightBodyHtml}
@@ -187,10 +228,9 @@
   window.renderTab3 = window.renderGmatVerbalStudio3;
   window.renderVerbalStudio3 = window.renderGmatVerbalStudio3;
 
-  // Hook switchTab so Tab 3 always renders the connected Split-Pane GMAT Verbal Studio
-  const prevSwitch = window.selectUnifiedTab;
+  const prevSelect = window.selectUnifiedTab;
   window.selectUnifiedTab = function (tab) {
-    if (typeof prevSwitch === "function") prevSwitch(tab);
+    if (typeof prevSelect === "function") prevSelect(tab);
     const tNum = parseInt(String(tab).replace(/\D/g, ""), 10);
     if (tNum === 3) {
       window.renderGmatVerbalStudio3(document.getElementById("main-workspace"));
