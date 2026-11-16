@@ -448,7 +448,7 @@ window.renderMockSimulator4 = async function (el) {
   window.clearMockLog4 = function () {
     if (!confirm("Clear all recorded Serial Mock IDs and diagnostic attempt logs? This resets your Preparation Level baseline.")) return;
     localStorage.removeItem("ipm_mock_history_v1");
-    if (typeof window.syncPreparationReadinessHeader === "function") window.syncPreparationReadinessHeader();
+    if (typeof window.syncPreparationReadinessHeader === "function") window.syncPreparationReadinessHeader(); }
     window.renderMockSimulator4(document.getElementById("main-workspace"));
   };
 
@@ -527,7 +527,7 @@ window.renderMockSimulator4 = async function (el) {
   window.downloadOfficialMarksheet4 = function (serialLookup) {
     let st = window._MOCK_STATE;
     if (serialLookup) {
-      const hist = JSON.parse(localStorage.getItem("ipm_mock_history_v1") || "[]");
+      const isFullGmat = bp.id.endsWith("_FULL") || bp.title.includes("Full") || st.questions.length >= 60; if (isFullGmat) { const hist = JSON.parse(localStorage.getItem("ipm_mock_history_v1") || "[]");
       const found = hist.find(h => h.serialId === serialLookup);
       if (found && found.snapshot) st = found.snapshot;
     }
@@ -642,7 +642,7 @@ window.renderMockSimulator4 = async function (el) {
     const accuracy = (correct + wrong) > 0 ? Math.round((correct / (correct + wrong)) * 100) : 0;
     const pctScore = maxScore > 0 ? Math.round((score / maxScore) * 100) : 0;
 
-    const hist = JSON.parse(localStorage.getItem("ipm_mock_history_v1") || "[]");
+    const isFullGmat = bp.id.endsWith("_FULL") || bp.title.includes("Full") || st.questions.length >= 60; if (isFullGmat) { const hist = JSON.parse(localStorage.getItem("ipm_mock_history_v1") || "[]");
     hist.unshift({
       date: st.dateStr,
       time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
@@ -667,7 +667,7 @@ window.renderMockSimulator4 = async function (el) {
       }
     });
     localStorage.setItem("ipm_mock_history_v1", JSON.stringify(hist.slice(0, 25)));
-    if (typeof window.syncPreparationReadinessHeader === "function") window.syncPreparationReadinessHeader();
+    if (typeof window.syncPreparationReadinessHeader === "function") window.syncPreparationReadinessHeader(); }
 
     const banner = document.getElementById("mock-scorecard-banner");
     if (banner) {
@@ -827,7 +827,7 @@ window.renderTab4 = window.renderMockSimulator4;
 window.syncPreparationReadinessHeader = function () {
   const host = window.location.host.toLowerCase();
   const exam = host.includes("gmat") ? "GMAT" : (host.includes("gre") ? "GRE" : "CAT");
-  const hist = JSON.parse(localStorage.getItem("ipm_mock_history_v1") || "[]");
+  const isFullGmat = bp.id.endsWith("_FULL") || bp.title.includes("Full") || st.questions.length >= 60; if (isFullGmat) { const hist = JSON.parse(localStorage.getItem("ipm_mock_history_v1") || "[]");
   if (!hist.length) return;
 
   const avgPct = hist.reduce((acc, h) => acc + (h.maxScore > 0 ? (h.score / h.maxScore) : 0), 0) / hist.length;
@@ -847,7 +847,7 @@ window.syncPreparationReadinessHeader = function () {
 window.renderScoreForecaster6 = function (el) {
   const host = window.location.host.toLowerCase();
   const exam = host.includes("gmat") ? "GMAT" : (host.includes("gre") ? "GRE" : "CAT");
-  const hist = JSON.parse(localStorage.getItem("ipm_mock_history_v1") || "[]");
+  const isFullGmat = bp.id.endsWith("_FULL") || bp.title.includes("Full") || st.questions.length >= 60; if (isFullGmat) { const hist = JSON.parse(localStorage.getItem("ipm_mock_history_v1") || "[]");
 
   const avgRatio = hist.length
     ? hist.reduce((s, h) => s + (h.maxScore > 0 ? h.score / h.maxScore : 0), 0) / hist.length
