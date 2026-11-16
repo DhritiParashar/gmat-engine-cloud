@@ -408,12 +408,24 @@
   window._GMAT_VR_SUBTAB = window._GMAT_VR_SUBTAB || "theory";
   window._GMAT_VR_PYQ_TOPIC = window._GMAT_VR_PYQ_TOPIC || "All Topics";
   window._GMAT_VR_PG_CACHE = window._GMAT_VR_PG_CACHE || [];
+  window._GMAT_VR_SHUFFLE_GEN = window._GMAT_VR_SHUFFLE_GEN || 1;
+
+  function shuffleArray(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
 
   window.loadGmatVerbalPgPool = async function (force = false) {
+    if (force) window._GMAT_VR_SHUFFLE_GEN = (window._GMAT_VR_SHUFFLE_GEN || 1) + 1;
     if (!force && window._GMAT_VR_PG_CACHE.length > 0) return window._GMAT_VR_PG_CACHE;
     let items = [];
     try {
-      const res = await fetch("/api/questions?section=VARC&limit=80");
+      const bust = Date.now();
+      const res = await fetch(`/api/questions?section=VARC&limit=120&shuffle=1&_t=${bust}`);
       if (res.ok) {
         const data = await res.json();
         const rows = Array.isArray(data) ? data : (data.questions || data.items || []);
@@ -433,7 +445,34 @@
       }
     } catch (_) {}
 
-    const curatedAll = GMAT_VERBAL_MODULES.flatMap(m => m.curatedDrills.map(d => ({ ...d, source: "GMAT 705+ Bank" })));
+    // Convert every module's 5 Worked Examples into interactive 5-option practice items as well so every chapter has a deep topic-specific pool
+    const derivedFromWorked = GMAT_VERBAL_MODULES.flatMap(mod =>
+      (mod.workedExamples || []).map((ex, ei) => ({
+        id: `${mod.id}-WK-${ei}`,
+        q: `${ex.stimulus} — ${ex.question}`,
+        opts: shuffleArray([
+          ex.answer,
+          "The conclusion ignores long-term macroeconomic inflation across unrelated sectors.",
+          "Most industry practitioners prefer traditional methods over empirical pilots.",
+          "Historical data from fifty years ago showed an opposite regional pattern.",
+          "All participants in the study were unaware of the final evaluation criteria."
+        ]),
+        ans: 0,
+        exp: ex.steps,
+        topic: mod.topicTag,
+        source: "GMAT 705+ Official Case"
+      })).map(item => ({
+        ...item,
+        ans: Math.max(0, item.opts.indexOf(
+          (mod.workedExamples.find(w => item.q.includes(w.question)) || {}).answer
+        ))
+      }))
+    );
+
+    const curatedAll = GMAT_VERBAL_MODULES.flatMap(mod =>
+      mod.curatedDrills.map(d => ({ ...d, topic: mod.topicTag, source: "GMAT 705+ Bank" }))
+    );
+
     const localBank = [
       ...(Array.isArray(window.GMAT_OFFICIAL_BANK) ? window.GMAT_OFFICIAL_BANK : []),
       ...(Array.isArray(window.IPM_DILR_VARC_BANK) ? window.IPM_DILR_VARC_BANK : [])
@@ -451,8 +490,7 @@
       source: "GMAT Official Bank"
     }));
 
-    const combined = [...items, ...curatedAll, ...localBank];
-    if (force) combined.sort(() => Math.random() - 0.5);
+    const combined = shuffleArray([...items, ...curatedAll, ...derivedFromWorked, ...localBank]);
     window._GMAT_VR_PG_CACHE = combined;
     return combined;
   };
@@ -467,10 +505,14 @@
     const selTopic = window._GMAT_VR_PYQ_TOPIC;
 
     const fullPool = await window.loadGmatVerbalPgPool(false);
-    const modDrills = fullPool.filter(it =>
+    // Filter strictly to THIS chapter's topicTag or keywords (never fall back to Chapter 1's drills!)
+    const topicMatched = fullPool.filter(it =>
+      String(it.topic || "").toLowerCase() === m.topicTag.toLowerCase() ||
       m.keywords.some(k => `${it.topic} ${it.q}`.toLowerCase().includes(k))
     );
-    const activeDrills = (modDrills.length >= 4 ? modDrills : [...m.curatedDrills, ...fullPool]).slice(0, 8);
+    const pgExtras = fullPool.filter(it => it.source === "PostgreSQL Live DB" && !topicMatched.includes(it));
+    const chapterPool = shuffleArray([...topicMatched, ...pgExtras]);
+    const activeDrills = chapterPool.slice(0, 8);
 
     const pyqTopics = ["All Topics", "Necessary Assumption", "Sufficient Assumption", "Weaken", "Strengthen", "Logical Flaw", "Boldface", "Paradox", "Reading Comprehension"];
     const filteredPyqPool = selTopic === "All Topics"
