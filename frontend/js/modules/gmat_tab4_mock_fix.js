@@ -63,11 +63,14 @@
     const target = el || document.getElementById("main-workspace");
     if (!target) return;
 
+    window.scrollTo({ top: 0, behavior: "instant" });
     // Hide bottom Quant PYQ card while in Tab 4 so Tab 4 looks crisp and uncluttered
-    document.querySelectorAll("div").forEach(d => {
-      if (d.children.length > 0 && (d.textContent || "").includes("Live PostgreSQL Worked PYQs & Practice") && d.className.includes("rounded-2xl")) {
-        d.dataset.hiddenByTab4 = "1";
-        d.classList.add("hidden");
+    document.querySelectorAll("div, section").forEach(d => {
+      if (d.children.length > 0 && d.id !== "main-workspace" && (d.textContent || "").includes("Live PostgreSQL Worked PYQs & Practice") && (d.textContent || "").includes("Shuffle Fresh Set")) {
+        if (!d.contains(target)) {
+          d.dataset.hiddenByTab4 = "1";
+          d.classList.add("hidden");
+        }
       }
     });
 
