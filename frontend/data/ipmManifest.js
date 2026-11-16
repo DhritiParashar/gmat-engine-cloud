@@ -1,5 +1,5 @@
 window.IPM_MANIFEST = {
-  brand: "GOALisB GMAT Focus Master Engine",
+  brand: "GOALisB GMAT Master",
   tagline: "Adaptive Prep for GMAT Focus Edition (205–805 Scale) • M7, INSEAD, LBS & ISB",
 
   examModes: {
