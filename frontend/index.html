@@ -1370,5 +1370,427 @@
 <script src="js/modules/tab8_mock.js?v=3"></script>
 <script src="js/modules/tab9_pyq.js?v=3"></script>
 <script src="js/modules/tab9_pyq_vault.js?v=3"></script>
+<script id="pg-unified-modules-bundle">
+window.GMAT_DI_MODULES = [
+  {
+    id: "di_ds",
+    badge: "GMAT FOCUS DATA INSIGHTS • PILLAR 1",
+    title: "Data Sufficiency (DS): Algebra, Number Properties & Constraint Isolation",
+    subtitle: "8–10 Qs per Section • Pure Logical Sufficiency (No Geometry)",
+    overview: "GMAT Focus moved Data Sufficiency out of Quant and into Data Insights. You never compute a final number unless required to test uniqueness—your goal is to determine whether Statement (1) alone, Statement (2) alone, both together, or neither uniquely answers the target question.",
+    bridge: "Always wipe Statement (1) from memory before testing Statement (2) alone. On Yes/No DS prompts, a definitive 'NO' is just as sufficient as a definitive 'YES'. Beware the C-Trap when combining statements looks suspiciously easy.",
+    drills: [
+      { q: "Is integer x > 0? (1) x^2 > 16  (2) x^3 < 27", opts: ["(1) Alone", "(2) Alone", "Both Together", "Each Alone", "Neither Sufficient"], ans: 4, exp: "x = -5 satisfies both (-5)^2 = 25 > 16 and (-5)^3 = -125 < 27, whereas x = 4.5 also satisfies both -> Neither sufficient (E)." },
+      { q: "If positive integer n is divisible by 6, is n divisible by 12? (1) n is divisible by 4  (2) n/3 is odd", opts: ["(1) Alone", "(2) Alone", "Both Together", "Each Alone", "Neither Sufficient"], ans: 3, exp: "(1) lcm(6,4)=12 -> Yes. (2) n/3 odd means n is not divisible by 2*3*2=12 -> definitive No. Each statement alone is sufficient (D)." }
+    ]
+  },
+  {
+    id: "di_msr",
+    badge: "GMAT FOCUS DATA INSIGHTS • PILLAR 2",
+    title: "Multi-Source Reasoning (MSR) & Two-Part Analysis (TPA)",
+    subtitle: "10–12 Qs per Section • 3-Tab Financial Memos, Table Analysis & Graphics",
+    overview: "MSR presents 2–3 tabbed executive emails, financial tables, or operational memos followed by 3 linked questions. Two-Part Analysis (TPA) tests coupled constraints—such as portfolio allocation, conditional probability, or resource trade-offs—requiring two interdependent selections.",
+    bridge: "Spend 45 seconds mapping what each MSR tab contains (e.g., Tab 1: Revenue Table, Tab 2: Margin Footnotes, Tab 3: Policy Exceptions) before reading Question 1. Most 705+ traps hide in Tab 2 footnotes.",
+    drills: [
+      { q: "A $100M fund allocates capital across Senior Debt (6% yield) and Mezzanine Notes (11% yield) to earn exactly $8.2M annual interest. How much is allocated to Mezzanine Notes?", opts: ["$36M", "$40M", "$44M", "$50M", "$56M"], ans: 2, exp: "0.06(100 - M) + 0.11M = 8.2 => 0.05M = 2.2 => M = $44M." },
+      { q: "Division A revenue rose 20% to $120M while operating margin compressed from 25% to 20%. What was the net dollar change in Division A operating profit?", opts: ["-$3.0M", "-$1.0M", "+$1.0M", "+$2.0M", "+$4.0M"], ans: 1, exp: "Prior revenue = $100M at 25% = $25M profit. Current = $120M at 20% = $24M profit -> Net change = -$1.0M." }
+    ]
+  }
+];
+
+window.renderTab2 = function (el) {
+  window._GMAT_DI_IDX = window._GMAT_DI_IDX || 0;
+  const m = window.GMAT_DI_MODULES[window._GMAT_DI_IDX];
+  const nav = window.GMAT_DI_MODULES.map((item, idx) => `
+    <button type="button" onclick="window._GMAT_DI_IDX=${idx}; window.renderTab2(this.closest('#tab-content') || document.querySelector('[data-tab-panel]'));"
+      class="w-full text-left p-4 rounded-2xl border transition cursor-pointer ${idx === window._GMAT_DI_IDX ? 'border-indigo-500 bg-indigo-50/70 dark:bg-indigo-950/40' : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900'}">
+      <div class="font-extrabold text-sm text-slate-900 dark:text-white">${item.title}</div>
+      <div class="text-xs text-slate-500 mt-1">${item.subtitle}</div>
+    </button>
+  `).join("");
+
+  const drillsHtml = m.drills.map((d, i) => `
+    <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 space-y-2">
+      <div class="text-xs font-bold text-slate-900 dark:text-white">Q${i+1}. ${d.q}</div>
+      <div class="flex flex-wrap gap-2">
+        ${d.opts.map((o, oi) => `<button type="button" onclick="this.parentElement.nextElementSibling.classList.remove('hidden')" class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 text-xs font-semibold hover:border-indigo-500 cursor-pointer">${o}</button>`).join("")}
+      </div>
+      <div class="hidden text-xs text-emerald-700 dark:text-emerald-300 pt-1"><strong>Correct Answer: ${d.opts[d.ans]}</strong> — ${d.exp}</div>
+    </div>
+  `).join("");
+
+  el.innerHTML = `
+    <div class="max-w-6xl mx-auto my-4 grid grid-cols-1 lg:grid-cols-12 gap-5">
+      <div class="lg:col-span-4 space-y-3">
+        <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-600">DATA INSIGHTS (2 CORE PILLARS)</div>
+        ${nav}
+      </div>
+      <div class="lg:col-span-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 space-y-4 shadow-sm">
+        <span class="text-[10px] font-extrabold uppercase tracking-wider text-indigo-600">${m.badge}</span>
+        <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">${m.title}</h2>
+        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 space-y-2 text-xs leading-relaxed text-slate-700 dark:text-slate-300">
+          <div class="font-extrabold uppercase text-[11px] text-indigo-600">Comprehensive Module Overview &amp; 735+ Strategy</div>
+          <p>${m.overview}</p>
+          <p><strong>Execution Heuristic:</strong> ${m.bridge}</p>
+        </div>
+        <div class="space-y-3">${drillsHtml}</div>
+      </div>
+    </div>
+  `;
+};
+// ==============================================================================
+// DEFINITIVE TABS 2, 3, 4, 5 RENDERERS (STRICT 1-TO-1 TEST-PREP MAPPING)
+// ==============================================================================
+(function () {
+  const host = window.location.host.toLowerCase();
+  const exam = host.includes("gmat") ? "GMAT" : (host.includes("gre") ? "GRE" : "CAT");
+
+  // TAB 3: VERBAL STUDIO (VARC / CR & RC / TC, SE & RC)
+  window.renderVerbalStudio3 = function (el) {
+    const sets = exam === "GMAT" ? [
+      {
+        tag: "GMAT FOCUS CRITICAL REASONING • NECESSARY ASSUMPTION",
+        title: "Supply-Chain Automation & Unit Margin Paradox",
+        passage: "Over the past two years, Meridien Logistics automated 70% of its regional sorting hubs, cutting per-parcel handling labor costs by 38%. Nevertheless, Meridien's overall operating margin declined by 2.4 percentage points over the same period, even though total parcel volume and average revenue per parcel remained unchanged.",
+        q: "Which of the following, if true, most helps to explain the decline in Meridien's overall operating margin?",
+        opts: [
+          "Competitors in the regional parcel market also invested heavily in automated sorting equipment.",
+          "Depreciation and specialized maintenance contracts for the new sorting hardware exceeded the dollar savings from reduced handling labor.",
+          "Customer delivery satisfaction scores improved significantly after hub automation was completed.",
+          "Fuel prices for long-haul freight remained stable throughout the two-year period.",
+          "Meridien plans to automate its remaining 30% of sorting hubs next fiscal year."
+        ],
+        ans: 1,
+        exp: "Total cost = Labor + Equipment/Overhead. Even with revenue constant and labor down 38%, if hardware depreciation + maintenance rose by more than the labor dollar savings, operating margin falls."
+      },
+      {
+        tag: "GMAT FOCUS READING COMPREHENSION • INFERENCE & AUTHOR STRUCTURE",
+        title: "Behavioral Pricing & Reference-Point Anchoring",
+        passage: "Classical microeconomic models posit that rational consumers evaluate price changes solely by comparing marginal utility against budget constraints. Empirical pricing studies, however, reveal strong reference-dependence: consumers penalize perceived price surcharges far more sharply than they reward economically identical discounts from a higher list price, particularly when competitor pricing is transparent.",
+        q: "The passage suggests that a firm seeking to minimize consumer resistance during a cost-driven price adjustment would most likely succeed by:",
+        opts: [
+          "Introducing frequent temporary surcharges rather than altering its published list price.",
+          "Eliminating all competitor price comparisons from its marketing materials.",
+          "Establishing a higher transparent list price paired with targeted promotional discounts rather than adding surcharges to a low base price.",
+          "Assuming consumers evaluate marginal utility independently of historical prices.",
+          "Reducing product quality while keeping nominal prices fixed."
+        ],
+        ans: 2,
+        exp: "Because consumers penalize surcharges far more sharply than equivalent discounts from a higher list price, framing around a higher list price with discounts minimizes reference-point resistance."
+      }
+    ] : (exam === "GRE" ? [
+      {
+        tag: "GRE VERBAL • TEXT COMPLETION & SENTENCE EQUIVALENCE",
+        title: "Multi-Clause Contrast & Semantic Pair Mastery",
+        passage: "Although early historiographers portrayed the 14th-century maritime guilds as rigidly (i) ______ institutions resistant to navigational innovation, archival port ledgers reveal a far more (ii) ______ posture: guild captains routinely underwrote experimental astrolabe trials whenever cross-oceanic freight margins justified the risk.",
+        q: "Select the best pair of entries for Blank (i) and Blank (ii):",
+        opts: [
+          "(i) hidebound  |  (ii) pragmatic",
+          "(i) mercurial  |  (ii) dogmatic",
+          "(i) prescient  |  (ii) sclerotic",
+          "(i) malleable  |  (ii) doctrinaire",
+          "(i) iconoclastic | (ii) orthodox"
+        ],
+        ans: 0,
+        exp: "'Although' signals contrast: 'hidebound' (narrowly traditional/resistant to innovation) contrasts with 'pragmatic' (practical, underwriting trials when margins justified risk)."
+      },
+      {
+        tag: "GRE READING COMPREHENSION • SCIENTIFIC HYPOTHESIS CRITIQUE",
+        title: "Deep-Ocean Thermal Vents & Chemosynthetic Ecosystems",
+        passage: "Until the discovery of hydrothermal vent communities along the Galapagos Rift, biologists assumed that all complex trophic webs depended ultimately on solar photosynthesis. At abyssal depths devoid of sunlight, however, chemoautotrophic bacteria oxidize hydrogen sulfide dissolved in superheated vent plumes to fix inorganic carbon, sustaining dense colonies of tubeworms and bivalves.",
+        q: "Which of the following is most directly supported by the passage?",
+        opts: [
+          "Photosynthetic organisms cannot survive anywhere in the Galapagos Rift.",
+          "At least some complex biological food webs fix inorganic carbon without relying on solar energy.",
+          "Hydrogen sulfide is toxic to all multicellular marine invertebrates.",
+          "Abyssal tubeworms oxidize hydrogen sulfide directly without bacterial symbiosis.",
+          "Solar photosynthesis is less efficient than chemosynthesis in shallow waters."
+        ],
+        ans: 1,
+        exp: "Chemoautotrophic bacteria fix inorganic carbon using hydrogen sulfide in sunlight-free abyssal depths, sustaining complex colonies of tubeworms and bivalves."
+      }
+    ] : [
+      {
+        tag: "CAT VARC STUDIO • READING COMPREHENSION & TITA PARA-SUMMARY",
+        title: "Epistemic Humility, Algorithmic Forecasting & Fat-Tail Risk",
+        passage: "Modern financial and epidemiological forecasting models excel within stationary regimes where historical variance reliably bounds future outcomes. Yet in complex adaptive systems characterized by fat-tailed distributions, optimizing models solely for in-sample precision induces fragility: rare structural breaks—precisely the events carrying catastrophic consequence—lie outside the calibration window and are systematically underpriced.",
+        q: "Which of the following best captures the central thesis of the passage?",
+        opts: [
+          "Historical variance is completely useless for modeling stationary financial or epidemiological systems.",
+          "Over-optimizing predictive models on historical data creates systemic vulnerability to rare, high-impact structural breaks in fat-tailed domains.",
+          "Complex adaptive systems can be accurately predicted by expanding in-sample calibration windows.",
+          "Catastrophic events occur exclusively in epidemiological rather than financial systems."
+        ],
+        ans: 1,
+        exp: "The author contrasts stationary regimes with fat-tailed adaptive systems, arguing that optimizing for in-sample precision makes models fragile to rare, catastrophic structural breaks."
+      },
+      {
+        tag: "CAT VARC STUDIO • TITA PARA-JUMBLE (4-SENTENCE COHERENCE)",
+        title: "Arrange the 4 Sentences Into a Coherent Paragraph (TITA)",
+        passage: "1. Consequently, central banks face an asymmetric trade-off between anchoring long-term inflation expectations and avoiding premature liquidity tightening.\n2. Supply-side energy shocks initially raise headline price indices without reflecting excess aggregate demand.\n3. Raising policy rates aggressively in response to such cost-push pressures can depress capital investment while doing little to expand physical energy supply.\n4. Yet allowing elevated headline inflation to persist risks spilling over into wage-setting behavior across services.",
+        q: "Identify the logical 4-digit sequence (No Negative Marking in CAT TITA):",
+        opts: ["2 - 3 - 4 - 1", "1 - 2 - 3 - 4", "2 - 4 - 1 - 3", "3 - 2 - 4 - 1"],
+        ans: 0,
+        exp: "Sentence 2 introduces supply-side energy shocks -> Sentence 3 explains why raising rates hurts capex -> Sentence 4 ('Yet') gives the counter-risk of wage spillover -> Sentence 1 ('Consequently') concludes with the central bank trade-off: 2341."
+      }
+    ]);
+
+    el.innerHTML = `
+      <div class="max-w-6xl mx-auto my-4 space-y-4">
+        <div class="bg-slate-900 text-white rounded-2xl p-5 border border-slate-800 shadow-lg">
+          <span class="text-[10px] uppercase font-bold text-indigo-300">${exam} High-Percentile Verbal Studio</span>
+          <h2 class="text-xl font-extrabold mt-1">${exam === "CAT" ? "CAT VARC Studio: Dense RC Passages, Para-Jumbles & TITA Summaries" : (exam === "GMAT" ? "GMAT Verbal Studio: Critical Reasoning & Analytical RC" : "GRE Verbal Studio: Text Completion, Sentence Equivalence & RC")}</h2>
+          <p class="text-xs text-slate-300 mt-1">Practice passage structure mapping, assumption negation tests, and zero-penalty TITA / Multi-Blank logic.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          ${sets.map((s, idx) => `
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 space-y-3 shadow-sm">
+              <span class="text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-indigo-500/15 text-indigo-600 dark:text-indigo-300">${s.tag}</span>
+              <h3 class="text-base font-extrabold text-slate-900 dark:text-white">${s.title}</h3>
+              <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-line">${s.passage}</div>
+              <div class="text-xs font-bold text-slate-900 dark:text-white pt-1">Q${idx+1}. ${s.q}</div>
+              <div class="space-y-2">
+                ${s.opts.map((o, oi) => `
+                  <button type="button" onclick="this.parentElement.nextElementSibling.classList.remove('hidden')"
+                    class="w-full text-left px-3.5 py-2 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-500 text-xs font-medium text-slate-800 dark:text-slate-200 cursor-pointer">
+                    <strong>${String.fromCharCode(65 + oi)}.</strong> ${o}
+                  </button>
+                `).join("")}
+              </div>
+              <div class="hidden p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-xs text-emerald-800 dark:text-emerald-200">
+                <strong>Correct Answer: ${String.fromCharCode(65 + s.ans)}</strong> — ${s.exp}
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `;
+  };
+
+  // TAB 4: TIMED DIAGNOSTIC MOCK SIMULATOR (WITH CLEAN QUESTION STEMS & LIVE TAB 6 SYNC)
+  window.renderMockSimulator4 = function (el) {
+    const bank = [
+      { topic: "Algebra & Inequalities", q: "How many integer values of x satisfy |2x - 7| + |x - 1| <= 8?", opts: ["4", "5", "6", "7"], ans: 2, exp: "Testing boundary integers x = 0, 1, 2, 3, 4, 5 gives |2x-7|+|x-1| = 8, 5, 4, 3, 4, 7 (all <= 8), while x = -1 gives 11 and x = 6 gives 10 -> 6 integer solutions." },
+      { topic: "Arithmetic & Weighted Ratios", q: "A 40-liter solution contains 30% alcohol. How many liters of pure alcohol must be added to raise the concentration to 44%?", opts: ["8 L", "10 L", "12 L", "14 L"], ans: 1, exp: "Water remains constant at 70% of 40 L = 28 L. At 44% alcohol, water is 56% of new total V => 0.56V = 28 => V = 50 L => Added = 50 - 40 = 10 L." },
+      { topic: "Number Properties", q: "What is the remainder when 7^2026 is divided by 5?", opts: ["1", "2", "3", "4"], ans: 3, exp: "7 ≡ 2 (mod 5). Powers of 2 mod 5 cycle with length 4: 2, 4, 3, 1. Since 2026 = 4*506 + 2, 7^2026 ≡ 2^2 = 4 (mod 5)." },
+      { topic: "Combinatorics & Probability", q: "In how many ways can 6 distinct software modules be assigned to 3 servers such that each server receives at least 1 module?", opts: ["360", "540", "600", "720"], ans: 1, exp: "Total unrestricted assignments = 3^6 = 729. Subtract assignments missing at least 1 server: 3*(2^6) - 3*(1^6) = 192 - 3 = 189 => 729 - 189 = 540." },
+      { topic: "Data Logic & Rates", q: "Working together, Pipelines A and B fill a reservoir in 12 hours. If Pipeline A operates alone for 4 hours and Pipeline B finishes the remaining work in 18 hours, how long would Pipeline B take alone?", opts: ["21 hrs", "24 hrs", "27 hrs", "30 hrs"], ans: 0, exp: "4/A + 18/B = 1 and 1/A + 1/B = 1/12 => 4(1/12 - 1/B) + 18/B = 1 => 1/3 + 14/B = 1 => 14/B = 2/3 => B = 21 hours." }
+    ];
+
+    window._MOCK4_ANSWERS = {};
+    const scheme = exam === "CAT" ? "MCQ +3 / -1 (Negative Marking Active)" : "Adaptive Scaled +1 / 0 (Zero Negative Marking)";
+
+    el.innerHTML = `
+      <div class="max-w-5xl mx-auto my-4 space-y-4">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 flex flex-wrap items-center justify-between gap-3 shadow-sm">
+          <div>
+            <span class="text-[10px] font-extrabold uppercase text-indigo-600">${exam} Live Timed Section Drill</span>
+            <h2 class="text-lg font-extrabold text-slate-900 dark:text-white">Diagnostic Mock Simulator — ${exam} High-Yield Set</h2>
+            <div class="text-xs text-slate-500">Marking Scheme: <strong>${scheme}</strong> &bull; Submits directly into Tab 6 Score Forecaster</div>
+          </div>
+          <button type="button" onclick="
+            let correct = 0, wrong = 0;
+            const bankLen = 5;
+            const ansKey = [2, 1, 3, 1, 0];
+            for (let i = 0; i < bankLen; i++) {
+              if (window._MOCK4_ANSWERS[i] === undefined) continue;
+              if (window._MOCK4_ANSWERS[i] === ansKey[i]) correct++; else wrong++;
+            }
+            const isCat = window.location.host.toLowerCase().includes('cat') || (!window.location.host.includes('gmat') && !window.location.host.includes('gre'));
+            const score = isCat ? Math.max(0, correct * 3 - wrong * 1) : correct;
+            const maxScore = isCat ? bankLen * 3 : bankLen;
+            const hist = JSON.parse(localStorage.getItem('ipm_mock_history_v1') || '[]');
+            hist.unshift({ date: new Date().toLocaleDateString(), score, maxScore, correct, wrong });
+            localStorage.setItem('ipm_mock_history_v1', JSON.stringify(hist));
+            document.getElementById('mock4-result-banner').innerHTML = '<strong>Submitted!</strong> Correct: ' + correct + '/5 | Wrong: ' + wrong + ' | Net Score: ' + score + '/' + maxScore + ' — Telemetry synced to Header &amp; Tab 6 Score Forecaster.';
+            document.getElementById('mock4-result-banner').classList.remove('hidden');
+            document.querySelectorAll('.mock4-exp').forEach(e => e.classList.remove('hidden'));
+          " class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-extrabold shadow cursor-pointer">
+            Submit &amp; Sync to Tab 6 Forecaster
+          </button>
+        </div>
+
+        <div id="mock4-result-banner" class="hidden p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-700 text-xs text-emerald-900 dark:text-emerald-200"></div>
+
+        <div class="space-y-3">
+          ${bank.map((item, idx) => `
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 space-y-3 shadow-sm">
+              <div class="flex justify-between items-center text-xs">
+                <span class="font-extrabold text-indigo-600">Q${idx + 1} &bull; ${item.topic}</span>
+                <span class="text-[11px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold">${exam === "CAT" ? "+3 / -1 MCQ" : "+1 / 0 Adaptive"}</span>
+              </div>
+              <div class="text-sm font-semibold text-slate-900 dark:text-white">${item.q}</div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                ${item.opts.map((opt, oi) => `
+                  <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-500 text-xs font-semibold cursor-pointer">
+                    <input type="radio" name="mock4_q_${idx}" onchange="window._MOCK4_ANSWERS[${idx}]=${oi}">
+                    <span><strong>${String.fromCharCode(65 + oi)}.</strong> ${opt}</span>
+                  </label>
+                `).join("")}
+              </div>
+              <div class="mock4-exp hidden p-3 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 text-xs text-indigo-900 dark:text-indigo-200">
+                <strong>Solution (${String.fromCharCode(65 + item.ans)}):</strong> ${item.exp}
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `;
+  };
+
+  // Enforce strict 1-to-1 tab assignment across all 3 portals
+  window.renderTab3 = window.renderVerbalStudio3;
+  window.renderTab4 = window.renderMockSimulator4;
+  if (typeof window.renderTrapClinic5 === "function") {
+    window.renderTab5 = window.renderTrapClinic5;
+  }
+})();
+window.GMAT_TRAPS_18 = [
+  { cat: "Quantitative Reasoning", title: "Trap 1: Solving Data Sufficiency to a Numeric Value", bait: "Spending 3.5 minutes solving a complex system in Data Insights when only uniqueness is required.", fix: "Stop the instant you prove a unique value exists (or two valid values exist). Never waste time computing the final number." },
+  { cat: "Quantitative Reasoning", title: "Trap 2: Assuming Variables Are Positive Integers", bait: "Concluding x^2 > x implies x > 1, forgetting x < 0 or 0 < x < 1.", fix: "Always test FROZEN cases: Fractions (1/2), Roots, One (1), Zero (0), Extremes (100), Negatives (-2)." },
+  { cat: "Quantitative Reasoning", title: "Trap 3: Squaring Inequalities Without Sign Verification", bait: "Squaring x > y to get x^2 > y^2 when y is negative (e.g., 2 > -5, yet 4 < 25).", fix: "Never square both sides of an inequality unless both sides are guaranteed non-negative." },
+  { cat: "Quantitative Reasoning", title: "Trap 4: Divisibility With Non-Integer Variables", bait: "Assuming x/y = 3/4 means x is a multiple of 3 when x = 1.5 and y = 2.", fix: "Apply prime-factor divisibility rules ONLY when variables are explicitly restricted to integers." },
+  { cat: "Quantitative Reasoning", title: "Trap 5: Compound Percentage Base Shift", bait: "Treating +25% followed by -20% as a net +5% gain.", fix: "Multiply factors directly: 1.25 * 0.80 = 1.00 (0% net change)." },
+  { cat: "Quantitative Reasoning", title: "Trap 6: Geometry Carryover Habit", bait: "Looking for circle/triangle formulas on GMAT Focus Quant.", fix: "GMAT Focus eliminated Geometry—reframe coordinate distance/slope questions as pure algebra." },
+  { cat: "Data Insights (DS & MSR)", title: "Trap 7: Statement (2) Contamination", bait: "Carrying a constraint from Statement (1) into your evaluation of Statement (2).", fix: "Wipe Statement (1) completely from memory before testing Statement (2) alone." },
+  { cat: "Data Insights (DS & MSR)", title: "Trap 8: 'No' Is Sufficient in Yes/No Data Sufficiency", bait: "Choosing Choice E because Statement (1) proves 'x is definitely NOT greater than 0'.", fix: "A definitive 'NO' answers the question uniquely—mark the statement Sufficient." },
+  { cat: "Data Insights (DS & MSR)", title: "Trap 9: Multi-Source Reasoning Tab Blindness", bait: "Answering from Tab 1's table without checking Tab 2's footnote exception.", fix: "Scan all 3 MSR tabs for footnotes, currency units, and fiscal-year exclusions first." },
+  { cat: "Data Insights (DS & MSR)", title: "Trap 10: Two-Part Analysis Coupled Constraints", bait: "Picking Column 1 and Column 2 independently when they must satisfy a joint equation.", fix: "Solve the linking equation first, then match ordered pairs (X, Y) in the table." },
+  { cat: "Data Insights (DS & MSR)", title: "Trap 11: Correlation vs. Causation in Graphics", bait: "Inferring from a scatter plot that Variable A causes Variable B.", fix: "Select strictly descriptive relationships supported by the plotted axes." },
+  { cat: "Data Insights (DS & MSR)", title: "Trap 12: C-Trap in Data Sufficiency", bait: "Picking Choice C immediately because combining (1) and (2) looks obviously sufficient.", fix: "Whenever (1)+(2) looks too easy, test if one statement ALONE already suffices (Choice A or B)." },
+  { cat: "Verbal & Adaptive Strategy", title: "Trap 13: Leaving Final Questions Unanswered", bait: "Running out of time with 3 questions blank at the end of a 45-minute section.", fix: "GMAT Focus penalizes unanswered items far more heavily than wrong guesses—always click an answer before time expires." },
+  { cat: "Verbal & Adaptive Strategy", title: "Trap 14: Reversal vs. Negation in CR Assumption", bait: "Confusing a Strengthener with a Necessary Assumption.", fix: "Apply the Negation Test: if negating the choice destroys the conclusion, it is the required assumption." },
+  { cat: "Verbal & Adaptive Strategy", title: "Trap 15: Outside-Scope Knowledge in RC/CR", bait: "Choosing an answer that is factually true in real-world economics but unsupported by the passage.", fix: "Treat the passage as a closed universe; reject any choice introducing unmentioned mechanisms." },
+  { cat: "Verbal & Adaptive Strategy", title: "Trap 16: Boldface Role Confusion", bait: "Mislabeling a counter-premise conceded by the author as the main conclusion.", fix: "Trace 'However / Yet / Therefore' pivots to separate the rejected claim from the author's thesis." },
+  { cat: "Verbal & Adaptive Strategy", title: "Trap 17: Early-Question Careless Rush", bait: "Rushing Questions 1–5 to save time, anchoring the adaptive algorithm in a lower band.", fix: "Invest steady accuracy on Questions 1–7 to unlock the 705+ score trajectory." },
+  { cat: "Verbal & Adaptive Strategy", title: "Trap 18: Over-Using the 3-Edit Review Allowance", bait: "Changing correct first instincts during the end-of-section Question Review & Edit screen.", fix: "Only use your 3 answer edits when you spot a concrete arithmetic or misread error." }
+];
+
+window.renderTab5 = function (el) {
+  const cards = window.GMAT_TRAPS_18.map((t, i) => `
+    <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 space-y-2 shadow-sm">
+      <div class="flex items-center justify-between">
+        <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-indigo-500/15 text-indigo-600 dark:text-indigo-300">${t.cat}</span>
+        <span class="text-[11px] font-mono text-slate-400">#${i + 1} / 18</span>
+      </div>
+      <h4 class="font-extrabold text-sm text-slate-900 dark:text-white">${t.title}</h4>
+      <div class="text-xs text-rose-600 dark:text-rose-300"><strong>Adaptive Bait:</strong> ${t.bait}</div>
+      <div class="text-xs text-emerald-700 dark:text-emerald-300"><strong>735+ Defense:</strong> ${t.fix}</div>
+    </div>
+  `).join("");
+
+  el.innerHTML = `
+    <div class="max-w-6xl mx-auto my-4 space-y-4">
+      <div class="bg-slate-900 text-white rounded-2xl p-5 border border-slate-800 shadow-lg">
+        <span class="text-[10px] uppercase font-bold text-amber-300">GMAT Focus 205–805 Diagnostic Clinic</span>
+        <h2 class="text-xl font-extrabold mt-1">18 High-Frequency GMAT Focus Adaptive &amp; Data Insights Traps</h2>
+        <p class="text-xs text-slate-300 mt-1">Master Data Sufficiency elimination, Multi-Source Reasoning cross-checks, and computer-adaptive pacing to protect a 715+ score.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">${cards}</div>
+    </div>
+  `;
+};
+window.renderTrapClinic5 = window.renderTab5;
+
+window.GMAT_PREP_STATE = window.GMAT_PREP_STATE || {
+  qr: 84, vr: 83, di: 82,
+  syncNote: "Synced with Tab 4 Mock Ledger (Adjust sliders or click Sync Mock)"
+};
+
+window.calcGmatFocusTotal = function () {
+  const s = window.GMAT_PREP_STATE;
+  const sumSec = Number(s.qr) + Number(s.vr) + Number(s.di);
+  const raw205 = Math.round(205 + ((sumSec - 180) / 90) * 600);
+  return Math.min(805, Math.max(205, Math.round(raw205 / 10) * 10 + 5));
+};
+
+window.syncGmatPrepFromMock = function () {
+  let hist = [];
+  try { hist = JSON.parse(localStorage.getItem("ipm_mock_history_v1") || "[]"); } catch (e) {}
+  if (!hist.length) {
+    alert("Complete and submit a Timed Adaptive Mock in Tab 4 first to load your live GMAT Focus telemetry.");
+    return;
+  }
+  const latest = hist[0];
+  const ratio = Math.max(0, Math.min(1, Number(latest.score || 0) / Math.max(1, Number(latest.maxScore || 64))));
+  const secVal = Math.min(90, Math.max(60, Math.round(60 + ratio * 30)));
+  window.GMAT_PREP_STATE.qr = secVal;
+  window.GMAT_PREP_STATE.vr = secVal;
+  window.GMAT_PREP_STATE.di = Math.max(60, secVal - 1);
+  window.GMAT_PREP_STATE.syncNote = `Synced from Mock #${hist.length} (${latest.score}/${latest.maxScore}) → Est. ${window.calcGmatFocusTotal()}/805`;
+  window.renderTab6(window._LAST_TAB6_EL || document.getElementById("tab-content"));
+};
+
+window.updateGmatPrepField = function (field, val) {
+  window.GMAT_PREP_STATE[field] = Number(val);
+  window.renderTab6(window._LAST_TAB6_EL || document.getElementById("tab-content"));
+};
+
+window.renderTab6 = function (el) {
+  if (!el) return;
+  window._LAST_TAB6_EL = el;
+  const s = window.GMAT_PREP_STATE;
+  const totalScore = window.calcGmatFocusTotal();
+
+  const bands = [
+    { label: "735+ (99.6th %ile) Mastery Band", target: 735, split: "QR 87+ • VR 86+ • DI 86+", pace: "≤ 2.0 min/Q in QR • Zero unanswered questions • Max 1–2 hard misses in Q1–Q7", focus: "Eliminate DS C-Traps and master 3-tab MSR synthesis under 2.2 mins/Q." },
+    { label: "715+ (99th %ile) Benchmark", target: 715, split: "QR 85+ • VR 85+ • DI 84+", pace: "100% completion across all 3 sections (21 QR / 23 VR / 20 DI)", focus: "Protect early-question accuracy (Q1–Q6) to anchor the upper computer-adaptive band." },
+    { label: "685+ (96th %ile) Benchmark", target: 685, split: "QR 84+ • VR 83+ • DI 82+", pace: "Use 3-question Review & Edit allowance only on flagged arithmetic checks", focus: "Drill Tab 1 Weighted Averages/Algebra + Tab 2 Data Sufficiency isolation." },
+    { label: "655+ (91st %ile) Foundation Band", target: 655, split: "QR 82+ • VR 81+ • DI 80+", pace: "Strict 45-min section discipline — never leave final 2 questions blank", focus: "Complete all 18 GMAT Adaptive Traps in Tab 5." }
+  ];
+
+  const weakest = [
+    { name: "Data Insights (DI)", val: s.di, tip: "Drill Tab 2 Data Sufficiency & Multi-Source Reasoning sets to push DI ≥ 85." },
+    { name: "Quantitative Reasoning (QR)", val: s.qr, tip: "Practice Tab 1 Zero-Geometry Algebra & Number Properties back-solving." },
+    { name: "Verbal Reasoning (VR)", val: s.vr, tip: "Master Tab 3 Boldface & Necessary Assumption negation tests." }
+  ].sort((a, b) => a.val - b.val)[0];
+
+  const cardsHtml = bands.map(b => {
+    const diff = totalScore - b.target;
+    const status = diff >= 0
+      ? `<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 text-[11px] font-bold">Achieved (+${diff} pts)</span>`
+      : `<span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-700 text-[11px] font-bold">Need +${Math.abs(diff)} Focus Points</span>`;
+    return `
+      <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 space-y-1.5 shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div class="font-extrabold text-sm text-slate-900 dark:text-white">${b.label}</div>
+          <div>${status}</div>
+        </div>
+        <div class="text-[11px] font-mono text-indigo-600 dark:text-indigo-300 font-semibold">Required Sectional Floor: ${b.split}</div>
+        <div class="text-xs text-slate-600 dark:text-slate-300"><strong>Adaptive Pacing Rule:</strong> ${b.pace}</div>
+        <div class="text-[11px] text-slate-500 dark:text-slate-400"><strong>Prep Prescription:</strong> ${b.focus}</div>
+      </div>
+    `;
+  }).join("");
+
+  el.innerHTML = `
+    <div class="max-w-6xl mx-auto my-4 grid grid-cols-1 lg:grid-cols-12 gap-5">
+      <div class="lg:col-span-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 space-y-4 shadow-sm">
+        <div class="flex items-start justify-between gap-2">
+          <div>
+            <span class="text-[10px] font-extrabold uppercase tracking-wider text-indigo-600">GMAT Focus 205–805 Diagnostic Engine</span>
+            <h2 class="text-lg font-extrabold text-slate-900 dark:text-white">Adaptive Score &amp; Readiness Forecaster</h2>
+          </div>
+          <button type="button" onclick="window.syncGmatPrepFromMock()" class="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold cursor-pointer">&#8635; Sync Mock</button>
+        </div>
+        <div class="text-[11px] text-emerald-600 font-semibold">${s.syncNote}</div>
+
+        <div class="space-y-3">
+          <div><div class="flex justify-between text-xs"><span>Quantitative Reasoning (21 Qs • 45m)</span><strong>${s.qr} / 90</strong></div><input type="range" min="60" max="90" value="${s.qr}" oninput="window.updateGmatPrepField('qr', this.value)" class="w-full accent-indigo-600"></div>
+          <div><div class="flex justify-between text-xs"><span>Verbal Reasoning (23 Qs • 45m)</span><strong>${s.vr} / 90</strong></div><input type="range" min="60" max="90" value="${s.vr}" oninput="window.updateGmatPrepField('vr', this.value)" class="w-full accent-indigo-600"></div>
+          <div><div class="flex justify-between text-xs"><span>Data Insights (20 Qs • 45m)</span><strong>${s.di} / 90</strong></div><input type="range" min="60" max="90" value="${s.di}" oninput="window.updateGmatPrepField('di', this.value)" class="w-full accent-indigo-600"></div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 space-y-1">
+          <div class="flex justify-between text-xs"><span class="font-bold">Projected GMAT Focus Total:</span><strong class="text-indigo-700 dark:text-indigo-300 text-sm">${totalScore} / 805</strong></div>
+          <div class="text-[11px] text-slate-600 dark:text-slate-300"><strong>Highest-Leverage Section (${weakest.name}):</strong> ${weakest.tip}</div>
+        </div>
+      </div>
+      <div class="lg:col-span-7 space-y-2.5">${cardsHtml}</div>
+    </div>
+  `;
+};
+window.renderCollegePredictor = window.renderTab6;
+</script>
 </body>
 </html>
