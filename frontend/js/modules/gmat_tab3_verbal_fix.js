@@ -188,8 +188,8 @@
   window.renderVerbalStudio3 = window.renderGmatVerbalStudio3;
 
   // Hook switchTab so Tab 3 always renders the connected Split-Pane GMAT Verbal Studio
-  const prevSwitch = window.switchTab;
-  window.switchTab = function (tab) {
+  const prevSwitch = window.selectUnifiedTab;
+  window.selectUnifiedTab = function (tab) {
     if (typeof prevSwitch === "function") prevSwitch(tab);
     const tNum = parseInt(String(tab).replace(/\D/g, ""), 10);
     if (tNum === 3) {

@@ -285,8 +285,8 @@
     setTimeout(() => window.syncGmatPortalState(), 60);
   };
 
-  const origSwitchTab = window.switchTab;
-  window.switchTab = function (tab) {
+  const origSwitchTab = window.selectUnifiedTab;
+  window.selectUnifiedTab = function (tab) {
     if (typeof origSwitchTab === "function") origSwitchTab(tab);
     const tNum = parseInt(String(tab).replace(/\D/g, ""), 10);
     const ws = document.getElementById("main-workspace");
