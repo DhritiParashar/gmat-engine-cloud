@@ -64,7 +64,7 @@
     if (!target) return;
 
     window.scrollTo({ top: 0, behavior: "instant" });
-    // Hide bottom Quant PYQ card while in Tab 4 so Tab 4 looks crisp and uncluttered
+    window.scrollTo({ top: 0, behavior: "instant" });
     document.querySelectorAll("div, section").forEach(d => {
       if (d.children.length > 0 && d.id !== "main-workspace" && (d.textContent || "").includes("Live PostgreSQL Worked PYQs & Practice") && (d.textContent || "").includes("Shuffle Fresh Set")) {
         if (!d.contains(target)) {
