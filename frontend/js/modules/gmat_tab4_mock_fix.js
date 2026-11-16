@@ -11,7 +11,7 @@
     { id: "GMAT_QR",   count: 21, tag: "SECTIONAL • 45 MINS",        title: "2. Quantitative Reasoning (Zero Geometry • 21 Qs • 45 Mins)", desc: "Problem Solving (Choices A–E) across Algebra, Arithmetic, Number Properties & Word Problems (60–90 Scale).", mins: 45, secFilter: "QR" },
     { id: "GMAT_VR",   count: 23, tag: "SECTIONAL • 45 MINS",        title: "3. Verbal Reasoning CR & RC Clinic (23 Qs • 45 Mins)", desc: "Zero-Sentence-Correction Critical Reasoning & Analytical Reading Comprehension simulation (60–90 Scale).", mins: 45, secFilter: "VR" },
     { id: "GMAT_DI",   count: 20, tag: "DATA INSIGHTS • 45 MINS",    title: "4. Data Insights Deep Clinic (20 Qs • 45 Mins)", desc: "Data Sufficiency (AD/BCE), Multi-Source Reasoning, Two-Part Analysis & Graphics Interpretation (60–90 Scale).", mins: 45, secFilter: "DI" },
-    { id: "GMAT_705",  count: 30, tag: "99TH %ILE HARD POOL",        title: "5. 705+ Elite Adaptive Pacing Sprint (30 Qs • 60 Mins)", desc: "Upper-quartile 705–805 discriminator items engineered to protect early Q1–Q6 adaptive trajectory.", mins: 60, secFilter: "ALL" }
+    { id: "GMAT_705",  count: 30, tag: "99TH %ILE HARD POOL",        title: "5. Target 705+ Elite (99th %ile) Adaptive Pacing Sprint (30 Qs • 60 Mins)", desc: "Upper-quartile 705–805 discriminator items engineered to protect early Q1–Q6 adaptive trajectory.", mins: 60, secFilter: "ALL" }
   ];
 
   window._SELECTED_MOCK_BP = Number(window._SELECTED_MOCK_BP || 0);
