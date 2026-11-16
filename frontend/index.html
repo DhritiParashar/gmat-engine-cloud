@@ -1173,7 +1173,35 @@
     sub: "QR (21 Qs • 45m) &bull; VR (23 Qs • 45m) &bull; DI (20 Qs • 45m) &bull; 205–805 Scale",
     marking: "Computer-Adaptive (205–805 Scale) | Unanswered Penalty Active",
     pattern: "64 Qs | 135 Mins | Up to 3 Review Edits/Section",
-    modes: [{"label":"GMAT Focus Standard (64 Qs)","sub":"(205–805 Scale)","id":"STANDARD"},{"label":"Data Insights Deep Clinic","sub":"(20 Qs • 45 Min)","id":"DI_CLINIC"},{"label":"705+ (99th %ile) Adaptive Sprint","sub":"(Hard Pool)","id":"SPRINT_705"}],
+    modes: [
+  {
+    "id": "STANDARD",
+    "label": "GMAT Focus Standard (64 Qs)",
+    "sub": "(205–805 Scale)",
+    "sections": "QR (21 Qs • 45m) &bull; VR (23 Qs • 45m) &bull; DI (20 Qs • 45m) &bull; 205–805 Scale",
+    "pattern": "64 Qs | 135 Mins | Up to 3 Review Edits/Section",
+    "marking": "Computer-Adaptive (205–805 Scale) | Unanswered Penalty Active",
+    "targetTab": 1
+  },
+  {
+    "id": "DI_CLINIC",
+    "label": "Data Insights Deep Clinic",
+    "sub": "(20 Qs • 45 Min)",
+    "sections": "Data Sufficiency (8 Qs) &bull; Multi-Source Reasoning (6 Qs) &bull; Two-Part & Graphics (6 Qs)",
+    "pattern": "20 Qs | 45 Mins | On-Screen Calculator Active in DI Only",
+    "marking": "60–90 DI Sectional Scale | Equal Weight in Composite 205–805",
+    "targetTab": 2
+  },
+  {
+    "id": "SPRINT_705",
+    "label": "705+ (99th %ile) Adaptive Sprint",
+    "sub": "(Hard Pool)",
+    "sections": "Upper-Quartile Adaptive Items (QR 86+ / VR 85+ / DI 85+ Target Band)",
+    "pattern": "High-Difficulty Pacing Drill | Max 2.0 Mins/Q & Zero Unanswered Blanks",
+    "marking": "Protects Early-Question (Q1–Q6) Adaptive Trajectory",
+    "targetTab": 4
+  }
+],
     tabs: ["1. Quantitative Reasoning (Zero Geo)","2. Data Insights (DS \u0026 TPA)","3. Verbal Studio (CR \u0026 RC)","4. Timed Adaptive Mock","5. Trap Doctor \u0026 AI Doubts","6. GMAT Score Forecaster"],
     defaultTel: "Target: 715/805 &bull; Readiness: 685/805"
   };
@@ -1199,7 +1227,18 @@
     window.location.reload();
   };
 
-            window.selectUnifiedTab = function (tabNum) {
+              window.selectExamMode = function (idx) {
+    window._ACTIVE_MODE_IDX = Number(idx);
+    const m = CFG.modes[window._ACTIVE_MODE_IDX] || CFG.modes[0];
+    CFG.sub = m.sections;
+    CFG.pattern = m.pattern;
+    CFG.marking = m.marking;
+    renderCleanHeader();
+    if (m.targetTab && typeof window.selectUnifiedTab === "function") {
+      window.selectUnifiedTab(m.targetTab);
+    }
+  };
+  window.selectUnifiedTab = function (tabNum) {
     const n = Number(tabNum);
     window._ACTIVE_TAB_NUM = n;
     window.ACTIVE_TAB = n;
@@ -1267,7 +1306,7 @@
     const isDark = document.documentElement.classList.contains("dark");
     const modePills = CFG.modes.map((m, idx) => {
       const active = idx === window._ACTIVE_MODE_IDX;
-      return `<button type="button" onclick="window._ACTIVE_MODE_IDX=${idx}; renderCleanHeader();"
+      return `<button type="button" onclick="window.selectExamMode(${idx});"
         class="px-3.5 py-1.5 rounded-full text-xs font-bold transition cursor-pointer ${active ? 'bg-indigo-600 text-white shadow-sm' : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 hover:border-indigo-500'}">
         ${m.label} <span class="opacity-75 font-normal text-[11px]">${m.sub}</span>
       </button>`;
