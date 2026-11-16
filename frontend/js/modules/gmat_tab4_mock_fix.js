@@ -280,7 +280,7 @@
       : `<tr><td colspan="6" class="py-5 text-center text-xs text-slate-400">No Full-Length 64-Question GMAT Focus Mocks logged yet. Complete Blueprint 1 above to generate your GMAT-2026-XXXX Serial ID and calibrate Tab 6&#39;s 205–805 Forecaster.</td></tr>`;
 
     target.innerHTML = `
-      <div class="max-w-7xl mx-auto my-4 space-y-5">
+      <div class="max-w-7xl mx-auto pt-4 pb-6 space-y-5">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
           ${cardsHtml}
         </div>
