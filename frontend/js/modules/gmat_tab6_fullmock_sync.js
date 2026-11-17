@@ -112,4 +112,18 @@
 
   window.renderTab6 = window.renderGmatFullMockForecaster6;
   window.renderCallPredictor6 = window.renderGmatFullMockForecaster6;
+  window.renderCallPredictor = window.renderGmatFullMockForecaster6;
+  window.renderCollegePredictor = window.renderGmatFullMockForecaster6;
+  const _origGmatSwitch = window.switchTab;
+  window.switchTab = function (n) {
+    if (typeof _origGmatSwitch === "function") _origGmatSwitch(n);
+    if (Number(n) === 6) setTimeout(() => window.renderGmatFullMockForecaster6(), 30);
+  };
+  window.addEventListener("DOMContentLoaded", () => {
+    const _s = window.switchTab;
+    window.switchTab = function (n) {
+      if (typeof _s === "function") _s(n);
+      if (Number(n) === 6) setTimeout(() => window.renderGmatFullMockForecaster6(), 30);
+    };
+  });
 })();
