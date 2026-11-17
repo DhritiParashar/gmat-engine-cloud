@@ -58,10 +58,11 @@
       }
     });
 
-    // 2. Update Top Header Readiness pill
+    // 2. Update Top Header Readiness pill (handles combined "Target: ... • Readiness: ..." node)
     document.querySelectorAll("header span, header div, header strong").forEach(el => {
-      if (el.children.length === 0 && (el.textContent || "").trim().startsWith("Readiness:")) {
-        el.textContent = headerText;
+      const t = el.textContent || "";
+      if (t.includes("Readiness:")) {
+        el.innerHTML = el.innerHTML.replace(/Readiness:\s*[^<•|]+/, headerText + " ");
       }
     });
   }
